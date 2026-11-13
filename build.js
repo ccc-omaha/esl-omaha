@@ -206,7 +206,10 @@ ${field('c-message', u.f_message, '<textarea id="c-message" name="message" rows=
   </div>
 </header>
 
-<div class="suggest" id="suggest" hidden>
+${lang.code === 'en' ? `<div class="gt-note notranslate" id="gt-note" translate="no" hidden>
+  <div class="wrap"><p>Translated by Google. Some words may not be exact.</p><a href="/" data-lang="en">Show English</a></div>
+</div>
+` : ''}<div class="suggest" id="suggest" hidden>
   <div class="wrap"><p></p><span><button type="button" class="btn btn-dark btn-sm" data-yes></button><button type="button" class="btn-link" data-no></button></span></div>
 </div>
 

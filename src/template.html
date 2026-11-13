@@ -91,6 +91,15 @@
     .lang-btn{display:inline-flex;align-items:center;gap:.45rem;font:inherit;font-weight:700;font-size:.95rem;background:var(--aqua-soft);border:2px solid var(--aqua);color:var(--ink);border-radius:999px;padding:.5rem .95rem;cursor:pointer}
     .lang-btn:hover{background:var(--aqua)}
 
+    /* Google in-page translation: hide Google's own bar and highlights */
+    .skiptranslate iframe,.goog-te-banner-frame,#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
+    body{top:0!important}
+    .goog-text-highlight{background:none!important;box-shadow:none!important}
+    .gt-note{background:var(--ink);color:#fff;font-size:.92rem}
+    .gt-note .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center;justify-content:space-between;padding:.55rem 0}
+    .gt-note p{margin:0}
+    .gt-note a{color:#fff;font-weight:700}
+
     /* language suggestion */
     .suggest{background:var(--ink);color:#fff}
     .suggest .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.8rem 0}
