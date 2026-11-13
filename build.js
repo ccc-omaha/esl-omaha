@@ -225,6 +225,7 @@ ${field('c-message', u.f_message, '<textarea id="c-message" name="message" rows=
       </div>
       <figure class="hero-photo">
         <div class="bubble"><img src="${img(c.hero.photo)}" srcset="/images/esl-group-1200.webp 1200w, ${img(c.hero.photo)} 1800w" sizes="(max-width: 900px) 92vw, 50vw" alt="${esc(c.hero.photoAlt)}" width="1800" height="1200" fetchpriority="high"></div>
+        <svg class="tail" viewBox="0 0 64 46" aria-hidden="true"><path d="M12 0 L0 44 L54 0 Z" fill="var(--paper)"/><path d="M12 1.5 L1.5 43 L54 1.5" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
       </figure>
     </div>
   </section>

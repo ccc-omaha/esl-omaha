@@ -112,13 +112,11 @@
     .s-arabic .hero h1{letter-spacing:0}
     .lede{font-size:clamp(1.12rem,1.6vw,1.3rem);color:var(--ink-2);margin:1.4rem 0 2.1rem;max-width:34em}
     .actions{display:flex;flex-wrap:wrap;gap:.8rem}
-    .hero-photo{margin:0;position:relative}
+    .hero-photo{margin:0 0 46px;position:relative}
     .bubble{position:relative;border-radius:46% 54% 50% 50% / 50% 46% 54% 50%;border-radius:40px 40px 40px 40px;overflow:hidden;aspect-ratio:1.18;box-shadow:0 0 0 10px var(--paper),0 0 0 13px var(--ink)}
     .bubble img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-    .hero-photo::after{content:"";position:absolute;inset-inline-start:7%;bottom:-38px;width:62px;height:52px;background:var(--ink);clip-path:polygon(0 100%,26% 0,100% 0)}
-    [dir=rtl] .hero-photo::after{clip-path:polygon(100% 100%,74% 0,0 0)}
-    .hero-photo::before{content:"";position:absolute;inset-inline-start:calc(7% + 5px);bottom:-25px;width:44px;height:38px;background:var(--paper);clip-path:polygon(0 100%,26% 0,100% 0);z-index:1}
-    [dir=rtl] .hero-photo::before{clip-path:polygon(100% 100%,74% 0,0 0)}
+    .tail{position:absolute;top:calc(100% + 10px);inset-inline-start:13%;width:64px;height:46px;overflow:visible;z-index:2}
+    [dir=rtl] .tail{transform:scaleX(-1)}
 
     /* greetings */
     .hello{padding:2.6rem 0 1.4rem;overflow:hidden}
@@ -281,8 +279,7 @@
       .logo svg{height:34px}
       .lang-btn{padding:.45rem .7rem}
       .top .btn-sm{display:none}
-      .hero-photo::after{bottom:-30px;width:48px;height:40px}
-      .hero-photo::before{bottom:-19px;width:34px;height:29px}
+      .tail{width:48px;height:35px}
       .actions .btn{flex:1 1 100%}
       .row,.row.three,.class-pick .opts{grid-template-columns:1fr}
       .row.three.dob-row{grid-template-columns:1.4fr 1fr 1fr}
@@ -345,6 +342,7 @@
       </div>
       <figure class="hero-photo">
         <div class="bubble"><img src="/images/esl-group.webp" srcset="/images/esl-group-1200.webp 1200w, /images/esl-group.webp 1800w" sizes="(max-width: 900px) 92vw, 50vw" alt="ESL Omaha 的学生、家人和老师在课堂活动中一起微笑" width="1800" height="1200" fetchpriority="high"></div>
+        <svg class="tail" viewBox="0 0 64 46" aria-hidden="true"><path d="M12 0 L0 44 L54 0 Z" fill="var(--paper)"/><path d="M12 1.5 L1.5 43 L54 1.5" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
       </figure>
     </div>
   </section>

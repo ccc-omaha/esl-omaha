@@ -17,10 +17,11 @@ var CONFIG = {
     contact:  '1rw_c5w5s_guqYBXrAsNf6grs5nV5xiLMHW-4upOUGGw'  // ESL Omaha Contact Form
   },
   // Who gets an email for each submission. Separate several with commas.
+  // TESTING: set to Eric. Switch to ESL.Omaha.NE@gmail.com at launch.
   notify: {
-    tuesday:  'ESL.Omaha.NE@gmail.com',
-    thursday: 'ESL.Omaha.NE@gmail.com',
-    contact:  'ESL.Omaha.NE@gmail.com'
+    tuesday:  'etwendt@gmail.com',
+    thursday: 'etwendt@gmail.com',
+    contact:  'etwendt@gmail.com'
   },
   timestampHeader: 'Date',
   timeZone: 'America/Chicago'
