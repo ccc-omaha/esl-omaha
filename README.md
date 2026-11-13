@@ -18,3 +18,15 @@ The Tuesday registration, Thursday registration and contact forms post to a Goog
 
 ## Translations
 Machine-assisted. Have native speakers review before relying on them, especially Dari and Pashto. When English wording changes, update the same key in each `content/i18n` file.
+
+## Google connector details
+- Apps Script project: "ESL Omaha website forms" in the cccministryarts@gmail.com account.
+- Web app URL is in `src/config.json`. It stays the same as long as changes are deployed through Deploy > Manage deployments > Edit > Version: New version. A "New deployment" creates a different URL.
+- Timestamp goes in "Submitted On" or "Date", whichever the sheet already has.
+- Approving the script with several Google accounts signed in fails ("unable to open the file"). Use an Incognito window signed into cccministryarts only.
+
+## Launch checklist
+1. In the Apps Script, set every `notify` address to ESL.Omaha.NE@gmail.com (currently Eric for testing), save, and deploy a new version of the existing deployment.
+2. In Squarespace, turn off the old forms' Google Drive storage so nothing double-posts during the switch.
+3. Point eslomaha.com DNS at Netlify and add the domain in Netlify.
+4. Submit one real-looking test, confirm the row and Tera's email, delete the row.
