@@ -23,7 +23,8 @@ var CONFIG = {
     thursday: 'etwendt@gmail.com',
     contact:  'etwendt@gmail.com'
   },
-  timestampHeader: 'Date',
+  // The timestamp goes in whichever of these the sheet already has (leftmost wins).
+  timestampHeaders: ['Submitted On', 'Date'],
   timeZone: 'America/Chicago'
 };
 
@@ -61,7 +62,11 @@ function writeRow(sheet, data) {
 
   var values = {};
   var stamp = Utilities.formatDate(new Date(), CONFIG.timeZone, 'MM/dd/yyyy HH:mm:ss');
-  values[CONFIG.timestampHeader] = stamp;
+  var stampHeader = null, stampPos = Infinity;
+  CONFIG.timestampHeaders.forEach(function (h) {
+    if (norm(h) in index && index[norm(h)] < stampPos) { stampHeader = headers[index[norm(h)]]; stampPos = index[norm(h)]; }
+  });
+  values[stampHeader || CONFIG.timestampHeaders[0]] = stamp;
   Object.keys(data.fields || {}).forEach(function (k) { values[k] = data.fields[k]; });
 
   // Alternate columns (First Name, City...) are filled only if the sheet already has them.
