@@ -63,6 +63,10 @@
     document.documentElement.setAttribute('dir', RTL.indexOf(code) > -1 ? 'rtl' : 'ltr');
     var note = document.getElementById('gt-note');
     if (note) note.hidden = false;
+    var pick = document.querySelector('[data-gt="' + code + '"] span');
+    var label = document.querySelector('.lang-btn span');
+    if (pick && label) label.textContent = pick.textContent;
+    document.querySelectorAll('.lb-list [aria-current], .ld-grid [aria-current], .f-langs [aria-current]').forEach(function (a) { a.removeAttribute('aria-current'); });
   }
   var gtActive = D.lang === 'en' ? currentGT() : '';
   if (gtActive) { loadGT(); applyGT(gtActive); }
