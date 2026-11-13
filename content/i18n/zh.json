@@ -181,6 +181,7 @@
     "f_country": "原籍国",
     "f_country_help": "你在哪里出生？",
     "f_language": "母语",
+    "f_language_help": "你在家里说的语言，或你最习惯使用的语言。",
     "f_before": "你以前在 The Porch 上过 ESL 课程吗？",
     "o_yes": "是",
     "o_no": "否",

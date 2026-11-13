@@ -181,6 +181,7 @@
     "f_country": "Quốc gia gốc",
     "f_country_help": "Bạn sinh ra ở đâu?",
     "f_language": "Ngôn ngữ mẹ đẻ",
+    "f_language_help": "Ngôn ngữ bạn nói ở nhà hoặc thấy thoải mái nhất.",
     "f_before": "Bạn đã từng học lớp ESL tại The Porch chưa?",
     "o_yes": "Có",
     "o_no": "Không",

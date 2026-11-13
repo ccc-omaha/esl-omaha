@@ -181,6 +181,7 @@
     "f_country": "País de origen",
     "f_country_help": "¿Dónde naciste?",
     "f_language": "Primer idioma",
+    "f_language_help": "El idioma que hablas en casa o con el que te sientes más cómodo.",
     "f_before": "¿Has tomado clases de ESL en The Porch antes?",
     "o_yes": "Sí",
     "o_no": "No",

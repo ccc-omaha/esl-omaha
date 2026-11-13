@@ -141,7 +141,7 @@ ${field('r-zip', u.f_zip, input('r-zip', 'zip', 'text', ' autocomplete="postal-c
 ${radios('contact_method', u.f_contact_method, [['Text', u.o_text], ['Email', u.o_email], ['Phone Call', u.o_call], ['WhatsApp', u.o_whatsapp]], { required: false, checkbox: true })}
           <div class="row">
 ${field('r-country', u.f_country, input('r-country', 'country', 'text', ' required aria-describedby="r-country-help"'), { help: u.f_country_help })}
-${field('r-language', u.f_language, input('r-language', 'first_language', 'text', ' required'))}
+${field('r-language', u.f_language, input('r-language', 'first_language', 'text', ' required aria-describedby="r-language-help"'), { help: u.f_language_help })}
           </div>
 ${radios('before', u.f_before, [['Yes', u.o_yes], ['No', u.o_no]])}
 ${radios('level', u.f_level, [['Intro', u.o_intro], ...[1, 2, 3, 4, 5].map(n => [`Level ${n}`, `${u.o_level} ${n}`])], { cls: 'follow', }).replace('class="field choice follow"', 'class="field choice follow" data-show-if="before=Yes" hidden')}

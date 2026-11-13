@@ -9,38 +9,89 @@
   },
   "facts": {
     "items": [
-      { "title": "Grátis", "text": "As aulas e os livros não custam nada." },
-      { "title": "6 níveis", "text": "Das primeiras palavras ao inglês avançado." },
-      { "title": "Comece quando quiser", "text": "Novos alunos podem começar em qualquer semana do semestre." },
-      { "title": "Sem documentos", "text": "Não é preciso identidade, papéis nem pagamento." }
+      {
+        "title": "Grátis",
+        "text": "As aulas e os livros não custam nada."
+      },
+      {
+        "title": "6 níveis",
+        "text": "Das primeiras palavras ao inglês avançado."
+      },
+      {
+        "title": "Comece quando quiser",
+        "text": "Novos alunos podem começar em qualquer semana do semestre."
+      },
+      {
+        "title": "Sem documentos",
+        "text": "Não é preciso identidade, papéis nem pagamento."
+      }
     ]
   },
   "classes": {
     "eyebrow": "Aulas",
     "heading": "Dois horários para aprender toda semana",
     "intro": "As aulas vão de agosto a maio, com pausas nos feriados. Cada semestre tem 16 semanas de aula.",
-    "tuesday": { "name": "Aulas à noite", "day": "Às terças-feiras", "who": "Todos os adultos a partir de 18 anos", "childcare": "Não há cuidado infantil" },
-    "thursday": { "name": "Aulas de dia", "day": "Às quintas-feiras", "who": "Somente mulheres", "childcare": "Cuidado infantil limitado para crianças de 0 a 6 anos" },
-    "bibleStudy": { "name": "Estudo Bíblico de Todas as Nações", "day": "Aos domingos", "where": "Igreja Christ Community, sala C220", "text": "Todos os níveis de inglês são bem-vindos. Não é preciso se inscrever." }
+    "tuesday": {
+      "name": "Aulas à noite",
+      "day": "Às terças-feiras",
+      "who": "Todos os adultos a partir de 18 anos",
+      "childcare": "Não há cuidado infantil"
+    },
+    "thursday": {
+      "name": "Aulas de dia",
+      "day": "Às quintas-feiras",
+      "who": "Somente mulheres",
+      "childcare": "Cuidado infantil limitado para crianças de 0 a 6 anos"
+    },
+    "bibleStudy": {
+      "name": "Estudo Bíblico de Todas as Nações",
+      "day": "Aos domingos",
+      "where": "Igreja Christ Community, sala C220",
+      "text": "Todos os níveis de inglês são bem-vindos. Não é preciso se inscrever."
+    }
   },
   "expect": {
     "eyebrow": "Sua primeira noite",
     "heading": "O que esperar",
     "steps": [
-      { "title": "Uma entrevista curta", "text": "Um professor conversa e lê com você para saber o seu nível. Isso leva mais ou menos metade da aula." },
-      { "title": "Entre na sua turma", "text": "Depois da entrevista, você entra em uma turma com pessoas do seu nível e começa a aprender." },
-      { "title": "Receba seu livro", "text": "Você recebe um livro grátis na sua segunda ou terceira noite de aula." }
+      {
+        "title": "Uma entrevista curta",
+        "text": "Um professor conversa e lê com você para saber o seu nível. Isso leva mais ou menos metade da aula."
+      },
+      {
+        "title": "Entre na sua turma",
+        "text": "Depois da entrevista, você entra em uma turma com pessoas do seu nível e começa a aprender."
+      },
+      {
+        "title": "Receba seu livro",
+        "text": "Você recebe um livro grátis na sua segunda ou terceira noite de aula."
+      }
     ]
   },
   "faq": {
     "eyebrow": "Perguntas",
     "heading": "Bom saber",
     "items": [
-      { "question": "Quem pode participar?", "answer": "Qualquer adulto com 18 anos ou mais é bem-vindo. Não pedimos identidade, documentos nem pagamento. Aqui tem lugar para você. As aulas de dia às quintas-feiras são somente para mulheres." },
-      { "question": "É grátis mesmo?", "answer": "Sim. As aulas e os livros são totalmente grátis." },
-      { "question": "Posso começar no meio do semestre?", "answer": "Sim. As inscrições ficam abertas o semestre todo, então você pode começar em qualquer semana." },
-      { "question": "Vocês dão carona?", "answer": "Talvez possamos dar carona para grupos de duas pessoas ou mais. As vagas são limitadas, e têm prioridade os alunos que pretendem vir toda semana." },
-      { "question": "Tem cuidado infantil?", "answer": "Há cuidado infantil limitado durante as aulas de dia às quintas-feiras, para crianças de 0 a 6 anos. As vagas podem acabar. Quando isso acontece, temos uma lista de espera." }
+      {
+        "question": "Quem pode participar?",
+        "answer": "Qualquer adulto com 18 anos ou mais é bem-vindo. Não pedimos identidade, documentos nem pagamento. Aqui tem lugar para você. As aulas de dia às quintas-feiras são somente para mulheres."
+      },
+      {
+        "question": "É grátis mesmo?",
+        "answer": "Sim. As aulas e os livros são totalmente grátis."
+      },
+      {
+        "question": "Posso começar no meio do semestre?",
+        "answer": "Sim. As inscrições ficam abertas o semestre todo, então você pode começar em qualquer semana."
+      },
+      {
+        "question": "Vocês dão carona?",
+        "answer": "Talvez possamos dar carona para grupos de duas pessoas ou mais. As vagas são limitadas, e têm prioridade os alunos que pretendem vir toda semana."
+      },
+      {
+        "question": "Tem cuidado infantil?",
+        "answer": "Há cuidado infantil limitado durante as aulas de dia às quintas-feiras, para crianças de 0 a 6 anos. As vagas podem acabar. Quando isso acontece, temos uma lista de espera."
+      }
     ]
   },
   "register": {
@@ -56,7 +107,9 @@
     "role": "Líder do programa",
     "success": "Obrigado! Sua mensagem foi enviada. A Tera vai responder em breve."
   },
-  "footer": { "text": "Aulas de inglês grátis para adultos em Omaha." },
+  "footer": {
+    "text": "Aulas de inglês grátis para adultos em Omaha."
+  },
   "seo": {
     "title": "ESL Omaha | Aulas de inglês grátis para adultos",
     "description": "Aulas de inglês grátis para adultos em Omaha. Seis níveis, do iniciante ao avançado. Sem custo, sem documentos, sem barreiras."
@@ -93,7 +146,20 @@
     "f_month": "Mês",
     "f_day": "Dia",
     "f_year": "Ano",
-    "months": ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"],
+    "months": [
+      "janeiro",
+      "fevereiro",
+      "março",
+      "abril",
+      "maio",
+      "junho",
+      "julho",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "dezembro"
+    ],
     "f_gender": "Sexo",
     "o_male": "Masculino",
     "o_female": "Feminino",
@@ -115,6 +181,7 @@
     "f_country": "País de origem",
     "f_country_help": "Onde você nasceu?",
     "f_language": "Primeiro idioma",
+    "f_language_help": "O idioma que você fala em casa ou com o qual se sente mais à vontade.",
     "f_before": "Você já fez aulas de ESL no The Porch?",
     "o_yes": "Sim",
     "o_no": "Não",

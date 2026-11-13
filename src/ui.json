@@ -65,6 +65,7 @@
   "f_country": "Country of origin",
   "f_country_help": "Where were you born?",
   "f_language": "First language",
+  "f_language_help": "The language you speak at home or know best.",
   "f_before": "Have you attended ESL classes at The Porch before?",
   "o_yes": "Yes",
   "o_no": "No",

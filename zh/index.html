@@ -202,6 +202,9 @@
     .form{display:grid;gap:1.35rem}
     .row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
     .row.three{grid-template-columns:1.3fr 1fr 1fr}
+    .row>.field{display:flex;flex-direction:column}
+    .row>.field>.help{flex:1}
+    .row>.field>input,.row>.field>select,.row>.field>textarea{margin-top:auto}
     .field{margin:0;padding:0;border:0;min-width:0}
     .field label,.field legend{display:block;font-weight:700;margin-bottom:.4rem;font-size:1rem;padding:0}
     .req,.opt{font-weight:500;font-size:.8rem;color:var(--ink-2);margin-inline-start:.3rem}
@@ -598,7 +601,8 @@
 
           <div class="field ">
             <label for="r-language">母语 <span class="req">必填</span></label>
-            <input id="r-language" name="first_language" type="text" required>
+            <p class="help" id="r-language-help">你在家里说的语言，或你最习惯使用的语言。</p>
+            <input id="r-language" name="first_language" type="text" required aria-describedby="r-language-help">
             <p class="err" id="r-language-err" hidden></p>
           </div>
           </div>
