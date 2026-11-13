@@ -26,7 +26,7 @@ Machine-assisted. Have native speakers review before relying on them, especially
 - Approving the script with several Google accounts signed in fails ("unable to open the file"). Use an Incognito window signed into cccministryarts only.
 
 ## Launch checklist
-1. In the Apps Script, set every `notify` address to ESL.Omaha.NE@gmail.com (currently Eric for testing), save, and deploy a new version of the existing deployment.
+1. Done Nov 13, 2026: notifications go to ESL.Omaha.NE@gmail.com (script version 5).
 2. In Squarespace, turn off the old forms' Google Drive storage so nothing double-posts during the switch.
 3. Point eslomaha.com DNS at Netlify and add the domain in Netlify.
 4. Submit one real-looking test, confirm the row and Tera's email, delete the row.
