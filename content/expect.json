@@ -1,0 +1,9 @@
+{
+  "eyebrow": "Your first night",
+  "heading": "What to expect",
+  "steps": [
+    { "title": "A short interview", "text": "A teacher talks with you and reads with you to find your level. This takes about half of the class." },
+    { "title": "Join your class", "text": "After the interview, you join a class with others at your level and start learning." },
+    { "title": "Get your book", "text": "You receive a free textbook on your second or third class night." }
+  ]
+}

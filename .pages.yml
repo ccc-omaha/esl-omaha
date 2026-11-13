@@ -1,0 +1,179 @@
+# Pages CMS configuration for eslomaha.com
+# Staff edit at https://app.pagescms.org. Saving commits to GitHub,
+# Netlify rebuilds the site and republishes in about a minute.
+# Text fields accept **bold**, *italic* and [link text](https://...).
+#
+# These fields are the ENGLISH copy. Dates and times update in every
+# language automatically. Other wording changes need the matching
+# translation in content/i18n/ updated too (ask the Comm Team).
+
+settings:
+  commit:
+    identity: user   # record the staff member's name on each saved change
+
+media:
+  input: images
+  output: /images
+  rename: safe
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  # ---------------------------------------------------------------
+  - name: hero
+    label: "1. Top of page"
+    type: file
+    path: content/hero.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The orange pill above the big headline (No cost. No barriers.)." }
+      - { name: heading, label: Headline, type: string, description: "The big headline at the top of the page." }
+      - { name: text, label: Intro paragraph, type: text, description: "The paragraph under the big headline." }
+      - { name: primaryButton, label: Dark button text, type: string, description: "The dark button under the intro. It jumps to the registration form." }
+      - { name: secondaryButton, label: Outline button text, type: string, description: "The outlined button next to it. It jumps to the class times." }
+      - { name: photo, label: Photo, type: image, description: "The photo in the speech bubble at the top. Keep it under 500 KB and landscape." }
+      - { name: photoAlt, label: Photo description, type: string, description: "Not shown on the page. Describes the photo for screen readers." }
+
+  # ---------------------------------------------------------------
+  - name: facts
+    label: "2. Quick facts row"
+    type: file
+    path: content/facts.json
+    format: json
+    fields:
+      - name: items
+        label: Facts
+        type: object
+        list: true
+        description: "The row of four short facts under the greetings (Free, 6 levels...)."
+        fields:
+          - { name: title, label: Bold word, type: string, description: "The large bold word or phrase." }
+          - { name: text, label: Short line, type: string, description: "The short line under the bold word." }
+
+  # ---------------------------------------------------------------
+  - name: classes
+    label: "3. Class times"
+    type: file
+    path: content/classes.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the Classes heading." }
+      - { name: heading, label: Heading, type: string, description: "The heading above the two class cards." }
+      - { name: intro, label: Intro, type: text, description: "The paragraph under the Classes heading." }
+      - name: tuesday
+        label: Tuesday card (blue)
+        type: object
+        description: "The left, light blue card."
+        fields: &classfields
+          - { name: name, label: Card label, type: string, description: "The small all-caps line at the top of the card (Evening Classes)." }
+          - { name: day, label: Day, type: string, description: "The big day name on the card (Tuesdays)." }
+          - { name: startDate, label: First class, type: date, options: { format: yyyy-MM-dd }, description: "First day of class. Shown in the When row, written out in every language automatically." }
+          - { name: endDate, label: Last class, type: date, options: { format: yyyy-MM-dd }, description: "Last day of class. Shown in the When row." }
+          - { name: startTime, label: Start time, type: string, description: "24-hour time, like 18:30 for 6:30 PM. Shown under the day name." }
+          - { name: endTime, label: End time, type: string, description: "24-hour time, like 20:30 for 8:30 PM." }
+          - { name: who, label: Who, type: string, description: "The Who row on the card." }
+          - { name: childcare, label: Childcare, type: string, description: "The Childcare row on the card." }
+          - { name: address, label: Address, type: string, description: "The Where row. Also used for the Directions link." }
+      - name: thursday
+        label: Thursday card (peach)
+        type: object
+        description: "The right, peach card."
+        fields: *classfields
+      - name: bibleStudy
+        label: Bible study box
+        type: object
+        description: "The outlined box under the two class cards."
+        fields:
+          - { name: name, label: Name, type: string, description: "The bold title in the box." }
+          - { name: day, label: Day, type: string, description: "The small line above the title, before the time (Sundays)." }
+          - { name: startDate, label: First week, type: date, options: { format: yyyy-MM-dd }, description: "Shown in the When row." }
+          - { name: endMonth, label: Last month, type: string, description: "Year and month it ends, like 2027-05 for May 2027." }
+          - { name: startTime, label: Start time, type: string, description: "24-hour time, like 10:45." }
+          - { name: endTime, label: End time, type: string, description: "24-hour time, like 12:00." }
+          - { name: where, label: Where, type: string, description: "The Where row in the box." }
+          - { name: text, label: Short note, type: text, description: "The line under the title." }
+          - { name: link, label: Learn more link, type: string, description: "Where the Learn more button goes (Church Center page)." }
+
+  # ---------------------------------------------------------------
+  - name: expect
+    label: "4. What to expect"
+    type: file
+    path: content/expect.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the heading." }
+      - { name: heading, label: Heading, type: string, description: "The What to expect heading." }
+      - name: steps
+        label: Steps
+        type: object
+        list: true
+        description: "The numbered steps, left to right."
+        fields:
+          - { name: title, label: Step title, type: string, description: "The bold title next to the number." }
+          - { name: text, label: Step text, type: text, description: "The text under the step title." }
+
+  # ---------------------------------------------------------------
+  - name: faq
+    label: "5. Questions"
+    type: file
+    path: content/faq.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the heading." }
+      - { name: heading, label: Heading, type: string, description: "The heading to the left of the questions." }
+      - name: items
+        label: Questions
+        type: object
+        list: true
+        description: "Each question opens to show its answer."
+        fields:
+          - { name: question, label: Question, type: string, description: "The bold line people click." }
+          - { name: answer, label: Answer, type: text, description: "Shown when the question is opened." }
+
+  # ---------------------------------------------------------------
+  - name: register
+    label: "6. Registration form"
+    type: file
+    path: content/register.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the form heading." }
+      - { name: heading, label: Heading, type: string, description: "The heading above the registration form." }
+      - { name: text, label: Intro, type: text, description: "The line under the heading." }
+      - { name: success, label: Thank you message, type: text, description: "Shown in place of the form after someone registers." }
+
+  # ---------------------------------------------------------------
+  - name: contact
+    label: "7. Contact"
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above Have a question?" }
+      - { name: heading, label: Heading, type: string, description: "The heading next to the contact form." }
+      - { name: text, label: Intro, type: text, description: "The paragraph under the heading." }
+      - { name: name, label: Leader name, type: string, description: "The name under the photo." }
+      - { name: role, label: Leader title, type: string, description: "The line under the name." }
+      - { name: photo, label: Leader photo, type: image, description: "The round photo. Square, under 200 KB." }
+      - { name: success, label: Thank you message, type: text, description: "Shown in place of the form after someone sends a message." }
+
+  # ---------------------------------------------------------------
+  - name: footer
+    label: "8. Footer"
+    type: file
+    path: content/footer.json
+    format: json
+    fields:
+      - { name: text, label: Tagline, type: string, description: "The line under the logo at the bottom of the page." }
+      - { name: address, label: Address, type: string, description: "The address under the tagline." }
+      - { name: facebook, label: Facebook link, type: string, description: "Where the Follow us on Facebook button goes." }
+
+  # ---------------------------------------------------------------
+  - name: seo
+    label: "9. Google and sharing"
+    type: file
+    path: content/seo.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string, description: "Not shown on the page. The title in Google results and browser tabs." }
+      - { name: description, label: Description, type: text, description: "Not shown on the page. The summary in Google results and link previews." }
+      - { name: shareImage, label: Share image, type: image, description: "Not shown on the page. The image when the link is shared. 1200 x 630." }

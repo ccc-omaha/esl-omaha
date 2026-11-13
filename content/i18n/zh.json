@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "eyebrow": "免费。没有门槛。",
+    "heading": "奥马哈成人免费英语课",
+    "text": "不管你是刚开始学习，还是想提高高级英语水平，这里都有你的位置。不用办手续，不用花钱。欢迎每一个人。",
+    "primaryButton": "报名上课",
+    "secondaryButton": "查看上课时间",
+    "photoAlt": "ESL Omaha 的学生、家人和老师在课堂活动中一起微笑"
+  },
+  "facts": {
+    "items": [
+      {
+        "title": "免费",
+        "text": "课程和课本全部免费。"
+      },
+      {
+        "title": "6 个级别",
+        "text": "从零基础到高级英语。"
+      },
+      {
+        "title": "随时加入",
+        "text": "新学生在学期中的任何一周都可以开始。"
+      },
+      {
+        "title": "不需要证件",
+        "text": "不需要身份证明、文件或付款。"
+      }
+    ]
+  },
+  "classes": {
+    "eyebrow": "课程",
+    "heading": "每周两个上课时间",
+    "intro": "课程从八月上到五月，节假日休息。每个学期有 16 周的教学。",
+    "tuesday": {
+      "name": "晚间课程",
+      "day": "每周二",
+      "who": "所有成人，18 岁及以上",
+      "childcare": "不提供托儿服务"
+    },
+    "thursday": {
+      "name": "日间课程",
+      "day": "每周四",
+      "who": "仅限女性",
+      "childcare": "为 0 至 6 岁儿童提供有限的托儿服务"
+    },
+    "bibleStudy": {
+      "name": "万国查经班",
+      "day": "每周日",
+      "where": "Christ Community Church，C220 室",
+      "text": "欢迎所有英语水平的人参加。不需要报名。"
+    }
+  },
+  "expect": {
+    "eyebrow": "第一次上课",
+    "heading": "你会经历什么",
+    "steps": [
+      {
+        "title": "简短的面谈",
+        "text": "老师会和你聊天，并和你一起阅读，了解你的英语水平。大约需要半节课的时间。"
+      },
+      {
+        "title": "进入你的班级",
+        "text": "面谈结束后，你会进入和你水平相同的班级，开始学习。"
+      },
+      {
+        "title": "领取课本",
+        "text": "在第二次或第三次上课时，你会得到一本免费课本。"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "常见问题",
+    "heading": "你需要知道的",
+    "items": [
+      {
+        "question": "谁可以参加？",
+        "answer": "欢迎所有 18 岁及以上的成人。我们不要求身份证明、文件或付款。这里有你的位置。周四日间课程仅限女性。"
+      },
+      {
+        "question": "真的免费吗？",
+        "answer": "是的。课程和课本完全免费。"
+      },
+      {
+        "question": "学期中间可以加入吗？",
+        "answer": "可以。整个学期都可以报名，所以你可以在任何一周开始。"
+      },
+      {
+        "question": "可以接送吗？",
+        "answer": "我们可能可以为两人或以上的小组提供接送。名额有限，每周都来上课的学生优先。"
+      },
+      {
+        "question": "有托儿服务吗？",
+        "answer": "周四日间课程为 0 至 6 岁的儿童提供有限的托儿服务。名额可能会满。名额满了以后，我们会安排候补名单。"
+      }
+    ]
+  },
+  "register": {
+    "eyebrow": "报名",
+    "heading": "预留你的位置",
+    "text": "选择你的课程并填写表格。ESL Omaha 的工作人员会在 3 天内联系你。",
+    "success": "谢谢！ESL Omaha 已经收到你的报名。我们会在 3 天内联系你。"
+  },
+  "contact": {
+    "eyebrow": "联系我们",
+    "heading": "有问题吗？",
+    "text": "给项目负责人 Tera Maydew 发消息，她会回复你。",
+    "role": "项目负责人",
+    "success": "谢谢！你的消息已发送。Tera 会尽快回复你。"
+  },
+  "footer": {
+    "text": "奥马哈成人免费英语课。"
+  },
+  "seo": {
+    "title": "ESL Omaha | 成人免费英语课",
+    "description": "奥马哈成人免费英语课。六个级别，从初级到高级。免费，不需要证件，没有门槛。"
+  },
+  "ui": {
+    "skip": "跳到主要内容",
+    "nav_classes": "课程",
+    "nav_faq": "常见问题",
+    "nav_contact": "联系",
+    "nav_register": "报名",
+    "lang_heading": "选择你的语言",
+    "lang_more": "更多语言",
+    "lang_more_note": "这些语言会在 Google 翻译中打开。",
+    "lang_suggest": "要用中文阅读这个网页吗？",
+    "lang_yes": "好的",
+    "lang_no": "不用，谢谢",
+    "close": "关闭",
+    "when": "日期",
+    "where": "地点",
+    "who": "对象",
+    "childcare": "托儿",
+    "directions": "路线",
+    "register_tuesday": "报名周二课程",
+    "register_thursday": "报名周四课程",
+    "learn_more": "了解更多",
+    "facebook": "在 Facebook 上关注我们",
+    "f_required": "必填",
+    "f_optional": "选填",
+    "f_class": "哪个课程？",
+    "f_first": "名",
+    "f_last": "姓",
+    "f_middle": "中间名",
+    "f_dob": "出生日期",
+    "f_month": "月",
+    "f_day": "日",
+    "f_year": "年",
+    "months": [
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月"
+    ],
+    "f_gender": "性别",
+    "o_male": "男",
+    "o_female": "女",
+    "f_select": "请选择",
+    "f_phone": "电话",
+    "f_email": "电子邮箱",
+    "f_address": "家庭住址",
+    "f_line1": "街道地址",
+    "f_line2": "公寓号或单元号",
+    "f_city": "城市",
+    "f_state": "州",
+    "f_zip": "邮政编码 (ZIP)",
+    "f_contact_method": "我们怎么联系你？",
+    "f_choose_any": "可多选",
+    "o_text": "短信",
+    "o_email": "电子邮件",
+    "o_call": "电话",
+    "o_whatsapp": "WhatsApp",
+    "f_country": "原籍国",
+    "f_country_help": "你在哪里出生？",
+    "f_language": "母语",
+    "f_before": "你以前在 The Porch 上过 ESL 课程吗？",
+    "o_yes": "是",
+    "o_no": "否",
+    "f_level": "你上次上的是哪个级别？",
+    "o_intro": "入门",
+    "o_level": "级别",
+    "f_heard": "你是怎么知道我们的？",
+    "o_family": "家人",
+    "o_friend": "朋友",
+    "o_website": "网站",
+    "o_flyer": "传单",
+    "o_restaurant": "餐馆",
+    "o_library": "图书馆",
+    "o_school": "学校",
+    "o_other": "其他",
+    "f_heard_other": "请告诉我们是在哪里",
+    "f_childcare": "你需要托儿服务吗？",
+    "f_children": "请列出每个孩子",
+    "f_children_hint": "孩子 1：名字、年龄、男孩或女孩",
+    "f_ride": "你需要接送吗？",
+    "o_ride_yes": "是，我需要接送（仅限两人或以上的小组）",
+    "f_submit_register": "提交报名",
+    "f_message": "留言",
+    "f_submit_contact": "发送消息",
+    "f_sending": "正在发送…",
+    "f_error_required": "请填写这一项。",
+    "f_error_email": "请检查电子邮箱地址。",
+    "f_error_date": "请检查这个日期。",
+    "f_error_summary": "请检查标红的部分。",
+    "f_error_send": "出了点问题，你的表格没有发送成功。请再试一次。",
+    "privacy": "我们只会用你的信息联系你关于 ESL Omaha 的事情。"
+  }
+}

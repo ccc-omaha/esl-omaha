@@ -1,0 +1,166 @@
+{
+  "siteUrl": "https://eslomaha.com",
+  "formEndpoint": "",
+  "moreLanguages": [
+    {
+      "code": "ne",
+      "native": "नेपाली",
+      "english": "Nepali"
+    },
+    {
+      "code": "my",
+      "native": "မြန်မာ",
+      "english": "Burmese"
+    },
+    {
+      "code": "so",
+      "native": "Soomaali",
+      "english": "Somali"
+    },
+    {
+      "code": "rw",
+      "native": "Kinyarwanda",
+      "english": "Kinyarwanda"
+    },
+    {
+      "code": "ti",
+      "native": "ትግርኛ",
+      "english": "Tigrinya"
+    },
+    {
+      "code": "am",
+      "native": "አማርኛ",
+      "english": "Amharic"
+    },
+    {
+      "code": "fa",
+      "native": "فارسی",
+      "english": "Persian (Farsi)"
+    },
+    {
+      "code": "ur",
+      "native": "اردو",
+      "english": "Urdu"
+    },
+    {
+      "code": "hi",
+      "native": "हिन्दी",
+      "english": "Hindi"
+    },
+    {
+      "code": "ru",
+      "native": "Русский",
+      "english": "Russian"
+    },
+    {
+      "code": "ku",
+      "native": "Kurdî",
+      "english": "Kurdish (Kurmanji)"
+    },
+    {
+      "code": "ckb",
+      "native": "کوردی",
+      "english": "Kurdish (Sorani)"
+    },
+    {
+      "code": "uz",
+      "native": "Oʻzbek",
+      "english": "Uzbek"
+    },
+    {
+      "code": "tr",
+      "native": "Türkçe",
+      "english": "Turkish"
+    },
+    {
+      "code": "pt",
+      "native": "Português",
+      "english": "Portuguese"
+    },
+    {
+      "code": "ht",
+      "native": "Kreyòl ayisyen",
+      "english": "Haitian Creole"
+    },
+    {
+      "code": "ko",
+      "native": "한국어",
+      "english": "Korean"
+    },
+    {
+      "code": "ja",
+      "native": "日本語",
+      "english": "Japanese"
+    },
+    {
+      "code": "th",
+      "native": "ไทย",
+      "english": "Thai"
+    },
+    {
+      "code": "lo",
+      "native": "ລາວ",
+      "english": "Lao"
+    },
+    {
+      "code": "km",
+      "native": "ខ្មែរ",
+      "english": "Khmer"
+    },
+    {
+      "code": "hmn",
+      "native": "Hmoob",
+      "english": "Hmong"
+    },
+    {
+      "code": "tl",
+      "native": "Tagalog",
+      "english": "Tagalog"
+    },
+    {
+      "code": "bn",
+      "native": "বাংলা",
+      "english": "Bengali"
+    },
+    {
+      "code": "pa",
+      "native": "ਪੰਜਾਬੀ",
+      "english": "Punjabi"
+    },
+    {
+      "code": "ln",
+      "native": "Lingála",
+      "english": "Lingala"
+    },
+    {
+      "code": "om",
+      "native": "Afaan Oromoo",
+      "english": "Oromo"
+    },
+    {
+      "code": "ig",
+      "native": "Igbo",
+      "english": "Igbo"
+    },
+    {
+      "code": "yo",
+      "native": "Yorùbá",
+      "english": "Yoruba"
+    },
+    {
+      "code": "ha",
+      "native": "Hausa",
+      "english": "Hausa"
+    },
+    {
+      "code": "de",
+      "native": "Deutsch",
+      "english": "German"
+    },
+    {
+      "code": "it",
+      "native": "Italiano",
+      "english": "Italian"
+    }
+  ]
+}

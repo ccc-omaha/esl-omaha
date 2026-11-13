@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Questions",
+  "heading": "Good to know",
+  "items": [
+    { "question": "Who can attend?", "answer": "Any adult age 18 or older is welcome. We do not ask for identification, documents or payment. You belong here. Thursday daytime classes are for women only." },
+    { "question": "Is it really free?", "answer": "Yes. Classes and textbooks are completely free." },
+    { "question": "Can I join in the middle of the semester?", "answer": "Yes. Registration stays open all semester, so you can start any week." },
+    { "question": "Can I get a ride?", "answer": "We may be able to give rides to groups of two or more. Rides are limited, and students who plan to come every week get first priority." },
+    { "question": "Is there childcare?", "answer": "Limited childcare is available during Thursday daytime classes for children ages 0–6. Spaces can fill up. When they do, we keep a waiting list." }
+  ]
+}

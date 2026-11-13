@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "eyebrow": "Miễn phí. Không rào cản.",
+    "heading": "Lớp tiếng Anh miễn phí cho người lớn tại Omaha",
+    "text": "Dù bạn mới bắt đầu hay muốn nâng cao trình độ, ở đây luôn có chỗ cho bạn. Không cần giấy tờ. Không tốn tiền. Mọi người đều được chào đón.",
+    "primaryButton": "Đăng ký lớp học",
+    "secondaryButton": "Xem giờ học",
+    "photoAlt": "Học viên, gia đình và giáo viên của ESL Omaha cùng mỉm cười tại một sự kiện của lớp"
+  },
+  "facts": {
+    "items": [
+      {
+        "title": "Miễn phí",
+        "text": "Lớp học và sách giáo khoa đều không mất tiền."
+      },
+      {
+        "title": "6 cấp độ",
+        "text": "Từ những từ đầu tiên đến tiếng Anh nâng cao."
+      },
+      {
+        "title": "Vào học bất cứ lúc nào",
+        "text": "Học viên mới có thể bắt đầu vào bất kỳ tuần nào trong học kỳ."
+      },
+      {
+        "title": "Không cần giấy tờ",
+        "text": "Không cần giấy tờ tùy thân, hồ sơ hay trả tiền."
+      }
+    ]
+  },
+  "classes": {
+    "eyebrow": "Lớp học",
+    "heading": "Hai buổi học mỗi tuần",
+    "intro": "Các lớp học từ tháng Tám đến tháng Năm, nghỉ vào các ngày lễ. Mỗi học kỳ có 16 tuần học.",
+    "tuesday": {
+      "name": "Lớp buổi tối",
+      "day": "Thứ Ba hằng tuần",
+      "who": "Tất cả người lớn từ 18 tuổi trở lên",
+      "childcare": "Không có giữ trẻ"
+    },
+    "thursday": {
+      "name": "Lớp ban ngày",
+      "day": "Thứ Năm hằng tuần",
+      "who": "Chỉ dành cho phụ nữ",
+      "childcare": "Giữ trẻ có giới hạn cho trẻ từ 0 đến 6 tuổi"
+    },
+    "bibleStudy": {
+      "name": "Học Kinh Thánh cho mọi dân tộc",
+      "day": "Chủ Nhật hằng tuần",
+      "where": "Nhà thờ Christ Community, phòng C220",
+      "text": "Chào đón mọi trình độ tiếng Anh. Không cần đăng ký."
+    }
+  },
+  "expect": {
+    "eyebrow": "Buổi tối đầu tiên",
+    "heading": "Bạn sẽ làm gì",
+    "steps": [
+      {
+        "title": "Một buổi phỏng vấn ngắn",
+        "text": "Giáo viên sẽ nói chuyện và đọc cùng bạn để biết trình độ của bạn. Việc này mất khoảng nửa buổi học."
+      },
+      {
+        "title": "Vào lớp của bạn",
+        "text": "Sau buổi phỏng vấn, bạn sẽ vào lớp cùng những người có trình độ giống bạn và bắt đầu học."
+      },
+      {
+        "title": "Nhận sách",
+        "text": "Bạn sẽ nhận sách miễn phí vào buổi học thứ hai hoặc thứ ba."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Câu hỏi",
+    "heading": "Điều nên biết",
+    "items": [
+      {
+        "question": "Ai có thể tham gia?",
+        "answer": "Mọi người lớn từ 18 tuổi trở lên đều được chào đón. Chúng tôi không yêu cầu giấy tờ tùy thân, hồ sơ hay trả tiền. Nơi đây có chỗ cho bạn. Lớp ban ngày thứ Năm chỉ dành cho phụ nữ."
+      },
+      {
+        "question": "Có thật sự miễn phí không?",
+        "answer": "Có. Lớp học và sách hoàn toàn miễn phí."
+      },
+      {
+        "question": "Tôi có thể vào học giữa học kỳ không?",
+        "answer": "Có. Đăng ký mở suốt học kỳ, nên bạn có thể bắt đầu vào bất kỳ tuần nào."
+      },
+      {
+        "question": "Có xe đưa đón không?",
+        "answer": "Chúng tôi có thể đưa đón nhóm từ hai người trở lên. Số chỗ có hạn, và ưu tiên cho học viên dự định đến học mỗi tuần."
+      },
+      {
+        "question": "Có giữ trẻ không?",
+        "answer": "Có giữ trẻ giới hạn trong giờ học ban ngày thứ Năm cho trẻ từ 0 đến 6 tuổi. Chỗ có thể hết. Khi hết chỗ, chúng tôi có danh sách chờ."
+      }
+    ]
+  },
+  "register": {
+    "eyebrow": "Đăng ký",
+    "heading": "Giữ chỗ của bạn",
+    "text": "Chọn lớp học và điền đơn. Người của ESL Omaha sẽ liên lạc với bạn trong vòng 3 ngày.",
+    "success": "Cảm ơn bạn! ESL Omaha đã nhận được đơn đăng ký. Chúng tôi sẽ liên lạc với bạn trong 3 ngày tới."
+  },
+  "contact": {
+    "eyebrow": "Liên lạc",
+    "heading": "Bạn có câu hỏi?",
+    "text": "Gửi tin nhắn cho người phụ trách chương trình, Tera Maydew. Cô ấy sẽ trả lời bạn.",
+    "role": "Người phụ trách chương trình",
+    "success": "Cảm ơn bạn! Tin nhắn đã được gửi. Tera sẽ sớm trả lời bạn."
+  },
+  "footer": {
+    "text": "Lớp tiếng Anh miễn phí cho người lớn tại Omaha."
+  },
+  "seo": {
+    "title": "ESL Omaha | Lớp tiếng Anh miễn phí cho người lớn",
+    "description": "Lớp tiếng Anh miễn phí cho người lớn tại Omaha. Sáu cấp độ từ cơ bản đến nâng cao. Miễn phí, không cần giấy tờ, không rào cản."
+  },
+  "ui": {
+    "skip": "Đến nội dung chính",
+    "nav_classes": "Lớp học",
+    "nav_faq": "Câu hỏi",
+    "nav_contact": "Liên lạc",
+    "nav_register": "Đăng ký",
+    "lang_heading": "Chọn ngôn ngữ của bạn",
+    "lang_more": "Ngôn ngữ khác",
+    "lang_more_note": "Các ngôn ngữ này mở bằng Google Dịch.",
+    "lang_suggest": "Xem trang này bằng tiếng Việt?",
+    "lang_yes": "Có",
+    "lang_no": "Không, cảm ơn",
+    "close": "Đóng",
+    "when": "Khi nào",
+    "where": "Ở đâu",
+    "who": "Dành cho",
+    "childcare": "Giữ trẻ",
+    "directions": "Chỉ đường",
+    "register_tuesday": "Đăng ký thứ Ba",
+    "register_thursday": "Đăng ký thứ Năm",
+    "learn_more": "Tìm hiểu thêm",
+    "facebook": "Theo dõi chúng tôi trên Facebook",
+    "f_required": "Bắt buộc",
+    "f_optional": "Không bắt buộc",
+    "f_class": "Lớp nào?",
+    "f_first": "Tên",
+    "f_last": "Họ",
+    "f_middle": "Tên đệm",
+    "f_dob": "Ngày sinh",
+    "f_month": "Tháng",
+    "f_day": "Ngày",
+    "f_year": "Năm",
+    "months": [
+      "Tháng 1",
+      "Tháng 2",
+      "Tháng 3",
+      "Tháng 4",
+      "Tháng 5",
+      "Tháng 6",
+      "Tháng 7",
+      "Tháng 8",
+      "Tháng 9",
+      "Tháng 10",
+      "Tháng 11",
+      "Tháng 12"
+    ],
+    "f_gender": "Giới tính",
+    "o_male": "Nam",
+    "o_female": "Nữ",
+    "f_select": "Chọn một",
+    "f_phone": "Số điện thoại",
+    "f_email": "Email",
+    "f_address": "Địa chỉ nhà",
+    "f_line1": "Số nhà và tên đường",
+    "f_line2": "Số căn hộ",
+    "f_city": "Thành phố",
+    "f_state": "Tiểu bang",
+    "f_zip": "Mã bưu chính (ZIP)",
+    "f_contact_method": "Chúng tôi nên liên lạc với bạn bằng cách nào?",
+    "f_choose_any": "Chọn bao nhiêu cũng được",
+    "o_text": "Tin nhắn",
+    "o_email": "Email",
+    "o_call": "Gọi điện",
+    "o_whatsapp": "WhatsApp",
+    "f_country": "Quốc gia gốc",
+    "f_country_help": "Bạn sinh ra ở đâu?",
+    "f_language": "Ngôn ngữ mẹ đẻ",
+    "f_before": "Bạn đã từng học lớp ESL tại The Porch chưa?",
+    "o_yes": "Có",
+    "o_no": "Không",
+    "f_level": "Lần trước bạn học cấp độ nào?",
+    "o_intro": "Nhập môn",
+    "o_level": "Cấp độ",
+    "f_heard": "Bạn biết đến chúng tôi qua đâu?",
+    "o_family": "Gia đình",
+    "o_friend": "Bạn bè",
+    "o_website": "Trang web",
+    "o_flyer": "Tờ rơi",
+    "o_restaurant": "Nhà hàng",
+    "o_library": "Thư viện",
+    "o_school": "Trường học",
+    "o_other": "Khác",
+    "f_heard_other": "Vui lòng cho biết ở đâu",
+    "f_childcare": "Bạn có cần giữ trẻ không?",
+    "f_children": "Vui lòng ghi từng bé",
+    "f_children_hint": "Bé 1: tên, tuổi, trai hay gái",
+    "f_ride": "Bạn có cần đưa đón không?",
+    "o_ride_yes": "Có, tôi cần đưa đón (chỉ cho nhóm từ 2 người trở lên)",
+    "f_submit_register": "Gửi đơn đăng ký",
+    "f_message": "Tin nhắn",
+    "f_submit_contact": "Gửi tin nhắn",
+    "f_sending": "Đang gửi…",
+    "f_error_required": "Vui lòng điền phần này.",
+    "f_error_email": "Vui lòng kiểm tra lại email.",
+    "f_error_date": "Vui lòng kiểm tra lại ngày này.",
+    "f_error_summary": "Vui lòng kiểm tra các phần được đánh dấu màu đỏ.",
+    "f_error_send": "Đã có lỗi và đơn của bạn chưa được gửi. Vui lòng thử lại.",
+    "privacy": "Chúng tôi chỉ dùng thông tin của bạn để liên lạc với bạn về ESL Omaha."
+  }
+}

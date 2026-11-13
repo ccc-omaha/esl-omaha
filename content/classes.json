@@ -1,0 +1,38 @@
+{
+  "eyebrow": "Classes",
+  "heading": "Two times to learn each week",
+  "intro": "Classes run August to May with breaks for holidays. Each semester is 16 weeks of teaching.",
+  "tuesday": {
+    "name": "Evening Classes",
+    "day": "Tuesdays",
+    "startDate": "2026-08-18",
+    "endDate": "2027-05-04",
+    "startTime": "18:30",
+    "endTime": "20:30",
+    "who": "All adults, ages 18 and up",
+    "childcare": "No childcare available",
+    "address": "10845 Harney St, Omaha, NE"
+  },
+  "thursday": {
+    "name": "Daytime Classes",
+    "day": "Thursdays",
+    "startDate": "2026-08-20",
+    "endDate": "2027-05-06",
+    "startTime": "09:15",
+    "endTime": "11:15",
+    "who": "Women only",
+    "childcare": "Limited childcare for ages 0–6",
+    "address": "10845 Harney St, Omaha, NE"
+  },
+  "bibleStudy": {
+    "name": "All Nations Bible Study",
+    "day": "Sundays",
+    "startDate": "2026-09-13",
+    "endMonth": "2027-05",
+    "startTime": "10:45",
+    "endTime": "12:00",
+    "where": "Christ Community Church, Room C220",
+    "text": "All English levels are welcome. No registration needed.",
+    "link": "https://cccomaha.churchcenter.com/registrations/events/3806298"
+  }
+}

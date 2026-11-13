@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "eyebrow": "Sin costo. Sin barreras.",
+    "heading": "Clases de inglés gratis para adultos en Omaha",
+    "text": "Si estás empezando o quieres mejorar tu nivel avanzado, aquí hay un lugar para ti. Sin papeleo. Sin costo. Todos son bienvenidos.",
+    "primaryButton": "Inscríbete en una clase",
+    "secondaryButton": "Ver horarios",
+    "photoAlt": "Estudiantes, familias y maestros de ESL Omaha sonriendo juntos en un evento de la clase"
+  },
+  "facts": {
+    "items": [
+      {
+        "title": "Gratis",
+        "text": "Las clases y los libros no cuestan nada."
+      },
+      {
+        "title": "6 niveles",
+        "text": "Desde las primeras palabras hasta inglés avanzado."
+      },
+      {
+        "title": "Empieza cuando quieras",
+        "text": "Los nuevos estudiantes pueden empezar cualquier semana del semestre."
+      },
+      {
+        "title": "Sin documentos",
+        "text": "No se necesita identificación, papeles ni pago."
+      }
+    ]
+  },
+  "classes": {
+    "eyebrow": "Clases",
+    "heading": "Dos horarios para aprender cada semana",
+    "intro": "Las clases son de agosto a mayo, con descansos en los días festivos. Cada semestre tiene 16 semanas de enseñanza.",
+    "tuesday": {
+      "name": "Clases de noche",
+      "day": "Martes",
+      "who": "Todos los adultos, de 18 años en adelante",
+      "childcare": "No hay cuidado de niños"
+    },
+    "thursday": {
+      "name": "Clases de día",
+      "day": "Jueves",
+      "who": "Solo mujeres",
+      "childcare": "Cuidado de niños limitado para edades de 0 a 6 años"
+    },
+    "bibleStudy": {
+      "name": "Estudio Bíblico de Todas las Naciones",
+      "day": "Domingos",
+      "where": "Christ Community Church, salón C220",
+      "text": "Todos los niveles de inglés son bienvenidos. No necesitas inscribirte."
+    }
+  },
+  "expect": {
+    "eyebrow": "Tu primera noche",
+    "heading": "Qué esperar",
+    "steps": [
+      {
+        "title": "Una entrevista corta",
+        "text": "Un maestro habla y lee contigo para saber tu nivel. Esto toma más o menos la mitad de la clase."
+      },
+      {
+        "title": "Únete a tu clase",
+        "text": "Después de la entrevista, entras a una clase con personas de tu mismo nivel y empiezas a aprender."
+      },
+      {
+        "title": "Recibe tu libro",
+        "text": "Recibes un libro gratis en tu segunda o tercera noche de clase."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "heading": "Bueno saber",
+    "items": [
+      {
+        "question": "¿Quién puede venir?",
+        "answer": "Cualquier adulto de 18 años o más es bienvenido. No pedimos identificación, documentos ni pago. Este es tu lugar. Las clases de los jueves de día son solo para mujeres."
+      },
+      {
+        "question": "¿De verdad es gratis?",
+        "answer": "Sí. Las clases y los libros son completamente gratis."
+      },
+      {
+        "question": "¿Puedo empezar a mitad del semestre?",
+        "answer": "Sí. La inscripción está abierta todo el semestre, así que puedes empezar cualquier semana."
+      },
+      {
+        "question": "¿Me pueden llevar en carro?",
+        "answer": "Es posible que podamos llevar a grupos de dos o más personas. Los viajes son limitados y tienen prioridad los estudiantes que piensan venir cada semana."
+      },
+      {
+        "question": "¿Hay cuidado de niños?",
+        "answer": "Hay cuidado de niños limitado durante las clases de los jueves de día, para niños de 0 a 6 años. Los lugares se pueden llenar. Si eso pasa, tenemos una lista de espera."
+      }
+    ]
+  },
+  "register": {
+    "eyebrow": "Inscripción",
+    "heading": "Aparta tu lugar",
+    "text": "Elige tu clase y llena el formulario. Alguien de ESL Omaha se comunicará contigo en un plazo de 3 días.",
+    "success": "¡Gracias! ESL Omaha recibió tu inscripción. Alguien se comunicará contigo en los próximos 3 días."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "heading": "¿Tienes una pregunta?",
+    "text": "Envía un mensaje a la líder del programa, Tera Maydew. Ella te responderá.",
+    "role": "Líder del programa",
+    "success": "¡Gracias! Tu mensaje fue enviado. Tera te responderá pronto."
+  },
+  "footer": {
+    "text": "Clases de inglés gratis para adultos en Omaha."
+  },
+  "seo": {
+    "title": "ESL Omaha | Clases de inglés gratis para adultos",
+    "description": "Clases de inglés gratis para adultos en Omaha. Seis niveles, de principiante a avanzado. Sin costo, sin documentos, sin barreras."
+  },
+  "ui": {
+    "skip": "Ir al contenido",
+    "nav_classes": "Clases",
+    "nav_faq": "Preguntas",
+    "nav_contact": "Contacto",
+    "nav_register": "Inscribirse",
+    "lang_heading": "Elige tu idioma",
+    "lang_more": "Más idiomas",
+    "lang_more_note": "Estos se abren en Google Translate.",
+    "lang_suggest": "¿Quieres ver esta página en español?",
+    "lang_yes": "Sí",
+    "lang_no": "No, gracias",
+    "close": "Cerrar",
+    "when": "Cuándo",
+    "where": "Dónde",
+    "who": "Quién",
+    "childcare": "Niños",
+    "directions": "Cómo llegar",
+    "register_tuesday": "Inscribirme los martes",
+    "register_thursday": "Inscribirme los jueves",
+    "learn_more": "Más información",
+    "facebook": "Síguenos en Facebook",
+    "f_required": "Obligatorio",
+    "f_optional": "Opcional",
+    "f_class": "¿Qué clase?",
+    "f_first": "Nombre",
+    "f_last": "Apellido",
+    "f_middle": "Segundo nombre",
+    "f_dob": "Fecha de nacimiento",
+    "f_month": "Mes",
+    "f_day": "Día",
+    "f_year": "Año",
+    "months": [
+      "enero",
+      "febrero",
+      "marzo",
+      "abril",
+      "mayo",
+      "junio",
+      "julio",
+      "agosto",
+      "septiembre",
+      "octubre",
+      "noviembre",
+      "diciembre"
+    ],
+    "f_gender": "Sexo",
+    "o_male": "Hombre",
+    "o_female": "Mujer",
+    "f_select": "Elige uno",
+    "f_phone": "Teléfono",
+    "f_email": "Correo electrónico",
+    "f_address": "Dirección de tu casa",
+    "f_line1": "Calle y número",
+    "f_line2": "Apartamento o unidad",
+    "f_city": "Ciudad",
+    "f_state": "Estado",
+    "f_zip": "Código postal",
+    "f_contact_method": "¿Cómo te contactamos?",
+    "f_choose_any": "Elige los que quieras",
+    "o_text": "Mensaje de texto",
+    "o_email": "Correo electrónico",
+    "o_call": "Llamada",
+    "o_whatsapp": "WhatsApp",
+    "f_country": "País de origen",
+    "f_country_help": "¿Dónde naciste?",
+    "f_language": "Primer idioma",
+    "f_before": "¿Has tomado clases de ESL en The Porch antes?",
+    "o_yes": "Sí",
+    "o_no": "No",
+    "f_level": "¿En qué nivel estuviste la última vez?",
+    "o_intro": "Introducción",
+    "o_level": "Nivel",
+    "f_heard": "¿Cómo supiste de nosotros?",
+    "o_family": "Familia",
+    "o_friend": "Amigo",
+    "o_website": "Sitio web",
+    "o_flyer": "Volante",
+    "o_restaurant": "Restaurante",
+    "o_library": "Biblioteca",
+    "o_school": "Escuela",
+    "o_other": "Otro",
+    "f_heard_other": "Por favor dinos dónde",
+    "f_childcare": "¿Necesitas cuidado de niños?",
+    "f_children": "Escribe cada niño",
+    "f_children_hint": "Niño 1: nombre, edad, niño o niña",
+    "f_ride": "¿Te interesa que te llevemos?",
+    "o_ride_yes": "Sí, me interesa que me lleven (solo grupos de 2 o más)",
+    "f_submit_register": "Enviar inscripción",
+    "f_message": "Mensaje",
+    "f_submit_contact": "Enviar mensaje",
+    "f_sending": "Enviando…",
+    "f_error_required": "Por favor llena esta parte.",
+    "f_error_email": "Por favor revisa este correo electrónico.",
+    "f_error_date": "Por favor revisa esta fecha.",
+    "f_error_summary": "Por favor revisa las partes marcadas en rojo.",
+    "f_error_send": "Algo salió mal y tu formulario no se envió. Por favor intenta otra vez.",
+    "privacy": "Solo usamos tu información para comunicarnos contigo sobre ESL Omaha."
+  }
+}

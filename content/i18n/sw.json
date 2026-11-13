@@ -1,0 +1,216 @@
+{
+  "hero": {
+    "eyebrow": "Bila malipo. Bila vizuizi.",
+    "heading": "Madarasa ya Kiingereza bure kwa watu wazima Omaha",
+    "text": "Ukiwa unaanza sasa au unataka kuboresha kiwango chako cha juu, kuna nafasi yako hapa. Hakuna makaratasi. Hakuna malipo. Kila mtu anakaribishwa.",
+    "primaryButton": "Jiandikishe darasani",
+    "secondaryButton": "Ona ratiba ya madarasa",
+    "photoAlt": "Wanafunzi, familia na walimu wa ESL Omaha wakitabasamu pamoja kwenye shughuli ya darasa"
+  },
+  "facts": {
+    "items": [
+      {
+        "title": "Bure",
+        "text": "Madarasa na vitabu havina gharama yoyote."
+      },
+      {
+        "title": "Viwango 6",
+        "text": "Kuanzia maneno ya kwanza hadi Kiingereza cha juu."
+      },
+      {
+        "title": "Anza wakati wowote",
+        "text": "Wanafunzi wapya wanaweza kuanza wiki yoyote ya muhula."
+      },
+      {
+        "title": "Hakuna hati",
+        "text": "Hakuna kitambulisho, makaratasi wala malipo."
+      }
+    ]
+  },
+  "classes": {
+    "eyebrow": "Madarasa",
+    "heading": "Nyakati mbili za kujifunza kila wiki",
+    "intro": "Madarasa ni kuanzia Agosti hadi Mei, na mapumziko wakati wa sikukuu. Kila muhula una wiki 16 za mafunzo.",
+    "tuesday": {
+      "name": "Madarasa ya jioni",
+      "day": "Kila Jumanne",
+      "who": "Watu wazima wote, miaka 18 na zaidi",
+      "childcare": "Hakuna huduma ya kulea watoto"
+    },
+    "thursday": {
+      "name": "Madarasa ya mchana",
+      "day": "Kila Alhamisi",
+      "who": "Wanawake pekee",
+      "childcare": "Huduma chache ya kulea watoto wa miaka 0 hadi 6"
+    },
+    "bibleStudy": {
+      "name": "Funzo la Biblia la Mataifa Yote",
+      "day": "Kila Jumapili",
+      "where": "Kanisa la Christ Community, Chumba C220",
+      "text": "Viwango vyote vya Kiingereza vinakaribishwa. Huhitaji kujiandikisha."
+    }
+  },
+  "expect": {
+    "eyebrow": "Usiku wako wa kwanza",
+    "heading": "Utarajie nini",
+    "steps": [
+      {
+        "title": "Mahojiano mafupi",
+        "text": "Mwalimu atazungumza nawe na kusoma nawe ili kujua kiwango chako. Hii huchukua karibu nusu ya muda wa darasa."
+      },
+      {
+        "title": "Jiunge na darasa lako",
+        "text": "Baada ya mahojiano, utajiunga na darasa la watu wa kiwango chako na kuanza kujifunza."
+      },
+      {
+        "title": "Pokea kitabu chako",
+        "text": "Utapokea kitabu bure usiku wako wa pili au wa tatu darasani."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Maswali",
+    "heading": "Ni vizuri kujua",
+    "items": [
+      {
+        "question": "Nani anaweza kuhudhuria?",
+        "answer": "Mtu mzima yeyote mwenye miaka 18 au zaidi anakaribishwa. Hatuombi kitambulisho, hati wala malipo. Una nafasi hapa. Madarasa ya mchana ya Alhamisi ni ya wanawake pekee."
+      },
+      {
+        "question": "Je, ni bure kweli?",
+        "answer": "Ndiyo. Madarasa na vitabu ni bure kabisa."
+      },
+      {
+        "question": "Naweza kuanza katikati ya muhula?",
+        "answer": "Ndiyo. Usajili uko wazi muhula wote, kwa hiyo unaweza kuanza wiki yoyote."
+      },
+      {
+        "question": "Naweza kupata usafiri?",
+        "answer": "Huenda tukaweza kutoa usafiri kwa vikundi vya watu wawili au zaidi. Nafasi ni chache, na kipaumbele ni kwa wanafunzi wanaopanga kuja kila wiki."
+      },
+      {
+        "question": "Kuna huduma ya kulea watoto?",
+        "answer": "Kuna huduma chache ya kulea watoto wa miaka 0 hadi 6 wakati wa madarasa ya mchana ya Alhamisi. Nafasi zinaweza kujaa. Zikijaa, tunaweka orodha ya kusubiri."
+      }
+    ]
+  },
+  "register": {
+    "eyebrow": "Usajili",
+    "heading": "Hifadhi nafasi yako",
+    "text": "Chagua darasa lako na ujaze fomu. Mtu kutoka ESL Omaha atawasiliana nawe ndani ya siku 3.",
+    "success": "Asante! ESL Omaha imepokea usajili wako. Mtu atawasiliana nawe ndani ya siku 3 zijazo."
+  },
+  "contact": {
+    "eyebrow": "Mawasiliano",
+    "heading": "Una swali?",
+    "text": "Tuma ujumbe kwa kiongozi wa programu, Tera Maydew. Atakujibu.",
+    "role": "Kiongozi wa Programu",
+    "success": "Asante! Ujumbe wako umetumwa. Tera atakujibu hivi karibuni."
+  },
+  "footer": {
+    "text": "Madarasa ya Kiingereza bure kwa watu wazima Omaha."
+  },
+  "seo": {
+    "title": "ESL Omaha | Madarasa ya Kiingereza bure kwa watu wazima",
+    "description": "Madarasa ya Kiingereza bure kwa watu wazima Omaha. Viwango sita, kuanzia mwanzo hadi juu. Bila malipo, bila hati, bila vizuizi."
+  },
+  "ui": {
+    "skip": "Nenda kwenye maudhui",
+    "nav_classes": "Madarasa",
+    "nav_faq": "Maswali",
+    "nav_contact": "Mawasiliano",
+    "nav_register": "Jiandikishe",
+    "lang_heading": "Chagua lugha yako",
+    "lang_more": "Lugha zaidi",
+    "lang_more_note": "Hizi hufunguka kwenye Google Translate.",
+    "lang_suggest": "Ungependa kusoma ukurasa huu kwa Kiswahili?",
+    "lang_yes": "Ndiyo",
+    "lang_no": "Hapana, asante",
+    "close": "Funga",
+    "when": "Lini",
+    "where": "Wapi",
+    "who": "Kwa nani",
+    "childcare": "Watoto",
+    "directions": "Maelekezo",
+    "register_tuesday": "Jiandikishe kwa Jumanne",
+    "register_thursday": "Jiandikishe kwa Alhamisi",
+    "learn_more": "Jifunze zaidi",
+    "facebook": "Tufuate kwenye Facebook",
+    "f_required": "Lazima",
+    "f_optional": "Si lazima",
+    "f_class": "Darasa gani?",
+    "f_first": "Jina la kwanza",
+    "f_last": "Jina la ukoo",
+    "f_middle": "Jina la kati",
+    "f_dob": "Tarehe ya kuzaliwa",
+    "f_month": "Mwezi",
+    "f_day": "Siku",
+    "f_year": "Mwaka",
+    "months": [
+      "Januari",
+      "Februari",
+      "Machi",
+      "Aprili",
+      "Mei",
+      "Juni",
+      "Julai",
+      "Agosti",
+      "Septemba",
+      "Oktoba",
+      "Novemba",
+      "Desemba"
+    ],
+    "f_gender": "Jinsia",
+    "o_male": "Mwanamume",
+    "o_female": "Mwanamke",
+    "f_select": "Chagua moja",
+    "f_phone": "Simu",
+    "f_email": "Barua pepe",
+    "f_address": "Anwani ya nyumbani",
+    "f_line1": "Anwani ya mtaa",
+    "f_line2": "Nambari ya nyumba au fleti",
+    "f_city": "Mji",
+    "f_state": "Jimbo",
+    "f_zip": "Msimbo wa posta (ZIP)",
+    "f_contact_method": "Tuwasiliane nawe vipi?",
+    "f_choose_any": "Chagua yoyote",
+    "o_text": "Ujumbe mfupi",
+    "o_email": "Barua pepe",
+    "o_call": "Kupiga simu",
+    "o_whatsapp": "WhatsApp",
+    "f_country": "Nchi ya asili",
+    "f_country_help": "Ulizaliwa wapi?",
+    "f_language": "Lugha ya kwanza",
+    "f_before": "Umewahi kuhudhuria madarasa ya ESL katika The Porch?",
+    "o_yes": "Ndiyo",
+    "o_no": "Hapana",
+    "f_level": "Ulihudhuria kiwango gani mara ya mwisho?",
+    "o_intro": "Utangulizi",
+    "o_level": "Kiwango",
+    "f_heard": "Ulisikiaje kuhusu sisi?",
+    "o_family": "Familia",
+    "o_friend": "Rafiki",
+    "o_website": "Tovuti",
+    "o_flyer": "Tangazo la karatasi",
+    "o_restaurant": "Mgahawa",
+    "o_library": "Maktaba",
+    "o_school": "Shule",
+    "o_other": "Nyingine",
+    "f_heard_other": "Tafadhali tuambie wapi",
+    "f_childcare": "Unahitaji huduma ya kulea watoto?",
+    "f_children": "Tafadhali andika kila mtoto",
+    "f_children_hint": "Mtoto 1: jina, umri, mvulana au msichana",
+    "f_ride": "Unahitaji usafiri?",
+    "o_ride_yes": "Ndiyo, nahitaji usafiri (kwa vikundi vya watu 2 au zaidi pekee)",
+    "f_submit_register": "Tuma usajili",
+    "f_message": "Ujumbe",
+    "f_submit_contact": "Tuma ujumbe",
+    "f_sending": "Inatuma…",
+    "f_error_required": "Tafadhali jaza sehemu hii.",
+    "f_error_email": "Tafadhali angalia barua pepe hii.",
+    "f_error_date": "Tafadhali angalia tarehe hii.",
+    "f_error_summary": "Tafadhali angalia sehemu zilizowekwa alama nyekundu.",
+    "f_error_send": "Kuna tatizo na fomu yako haikutumwa. Tafadhali jaribu tena.",
+    "privacy": "Tunatumia taarifa zako tu kuwasiliana nawe kuhusu ESL Omaha."
+  }
+}
