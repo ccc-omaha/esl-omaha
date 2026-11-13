@@ -86,7 +86,7 @@ content:
           - { name: name, label: Name, type: string, description: "The bold title in the box." }
           - { name: day, label: Day, type: string, description: "The small line above the title, before the time (Sundays)." }
           - { name: startDate, label: First week, type: date, options: { format: yyyy-MM-dd }, description: "Shown in the When row." }
-          - { name: endMonth, label: Last month, type: string, description: "Year and month it ends, like 2027-05 for May 2027." }
+          - { name: endDate, label: Last week, type: date, options: { format: yyyy-MM-dd }, description: "Last Sunday it meets. Shown in the When row." }
           - { name: startTime, label: Start time, type: string, description: "24-hour time, like 10:45." }
           - { name: endTime, label: End time, type: string, description: "24-hour time, like 12:00." }
           - { name: where, label: Where, type: string, description: "The Where row in the box." }

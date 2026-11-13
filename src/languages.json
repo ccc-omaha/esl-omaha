@@ -14,6 +14,51 @@
     "hello": "Hola"
   },
   {
+    "code": "ar",
+    "path": "ar",
+    "file": "ar",
+    "native": "العربية",
+    "english": "Arabic",
+    "hello": "مرحبًا",
+    "dir": "rtl",
+    "script": "arabic",
+    "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap\">"
+  },
+  {
+    "code": "te",
+    "path": "te",
+    "file": "te",
+    "native": "తెలుగు",
+    "english": "Telugu",
+    "hello": "నమస్కారం",
+    "script": "indic",
+    "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;800&display=swap\">"
+  },
+  {
+    "code": "ru",
+    "path": "ru",
+    "file": "ru",
+    "native": "Русский",
+    "english": "Russian",
+    "hello": "Здравствуйте"
+  },
+  {
+    "code": "pt-BR",
+    "path": "pt",
+    "file": "pt",
+    "native": "Português",
+    "english": "Portuguese",
+    "hello": "Olá"
+  },
+  {
+    "code": "fr",
+    "path": "fr",
+    "file": "fr",
+    "native": "Français",
+    "english": "French",
+    "hello": "Bonjour"
+  },
+  {
     "code": "fa-AF",
     "path": "fa",
     "file": "fa",
@@ -37,15 +82,23 @@
     "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap\">"
   },
   {
-    "code": "ar",
-    "path": "ar",
-    "file": "ar",
-    "native": "العربية",
-    "english": "Arabic",
-    "hello": "مرحبًا",
-    "dir": "rtl",
-    "script": "arabic",
-    "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap\">"
+    "code": "ne",
+    "path": "ne",
+    "file": "ne",
+    "native": "नेपाली",
+    "english": "Nepali",
+    "hello": "नमस्ते",
+    "script": "indic",
+    "fonts": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;800&display=swap\">"
+  },
+  {
+    "code": "ko",
+    "path": "ko",
+    "file": "ko",
+    "native": "한국어",
+    "english": "Korean",
+    "hello": "안녕하세요",
+    "script": "cjk"
   },
   {
     "code": "zh-Hans",
@@ -58,28 +111,12 @@
     "script": "cjk"
   },
   {
-    "code": "uk",
-    "path": "uk",
-    "file": "uk",
-    "native": "Українська",
-    "english": "Ukrainian",
-    "hello": "Привіт"
-  },
-  {
     "code": "sw",
     "path": "sw",
     "file": "sw",
     "native": "Kiswahili",
     "english": "Swahili",
     "hello": "Jambo"
-  },
-  {
-    "code": "fr",
-    "path": "fr",
-    "file": "fr",
-    "native": "Français",
-    "english": "French",
-    "hello": "Bonjour"
   },
   {
     "code": "vi",

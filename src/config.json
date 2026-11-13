@@ -3,9 +3,9 @@
   "formEndpoint": "https://script.google.com/macros/s/AKfycbyYq6djdpOH5HHwNX6zBAmYmgfI3taUSaHMLvvSrQe_ioi0xQDrx-PJ51ER31woJ_k2/exec",
   "moreLanguages": [
     {
-      "code": "ne",
-      "native": "नेपाली",
-      "english": "Nepali"
+      "code": "uk",
+      "native": "Українська",
+      "english": "Ukrainian"
     },
     {
       "code": "my",
@@ -48,11 +48,6 @@
       "english": "Hindi"
     },
     {
-      "code": "ru",
-      "native": "Русский",
-      "english": "Russian"
-    },
-    {
       "code": "ku",
       "native": "Kurdî",
       "english": "Kurdish (Kurmanji)"
@@ -73,19 +68,9 @@
       "english": "Turkish"
     },
     {
-      "code": "pt",
-      "native": "Português",
-      "english": "Portuguese"
-    },
-    {
       "code": "ht",
       "native": "Kreyòl ayisyen",
       "english": "Haitian Creole"
-    },
-    {
-      "code": "ko",
-      "native": "한국어",
-      "english": "Korean"
     },
     {
       "code": "ja",

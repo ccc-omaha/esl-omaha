@@ -47,11 +47,10 @@ const dateFmt = (loc, o) => new Intl.DateTimeFormat(loc, { calendar: 'gregory', 
 const d = s => new Date(s + (s.length === 7 ? '-01' : '') + 'T00:00:00Z');
 const t = s => new Date('2000-01-01T' + s + ':00Z');
 const dateRange = (loc, a, b) => dateFmt(loc, { year: 'numeric', month: 'long', day: 'numeric' }).formatRange(d(a), d(b));
-const monthRange = (loc, a, b) => `${dateFmt(loc, { year: 'numeric', month: 'long', day: 'numeric' }).format(d(a))} – ${dateFmt(loc, { year: 'numeric', month: 'long' }).format(d(b))}`;
 const timeRange = (loc, a, b) => dateFmt(loc, { hour: 'numeric', minute: '2-digit' }).formatRange(t(a), t(b));
 
 const icon = id => `<svg class="i" aria-hidden="true"><use href="#i-${id}"/></svg>`;
-const greetings = LANGS.map(l => `<span lang="${l.code}" dir="${l.dir || 'ltr'}">${esc(l.hello)}</span>`).join('<span class="dot" aria-hidden="true"></span>');
+const greetings = LANGS.map(l => `<span translate="no" lang="${l.code}" dir="${l.dir || 'ltr'}">${esc(l.hello)}</span>`).join('<span class="dot" aria-hidden="true"></span>');
 
 // ---------- page ----------
 function page(lang) {
@@ -74,7 +73,7 @@ function page(lang) {
           <dl>
             <div><dt>${icon('calendar')}${esc(u.when)}</dt><dd>${esc(when(k))}</dd></div>
             <div><dt>${icon('people')}${esc(u.who)}</dt><dd>${txt(x.who)}</dd></div>
-            <div><dt>${icon('pin')}${esc(u.where)}</dt><dd><span dir="ltr">${esc(x.address)}</span> <a class="dir-link" href="${mapLink(x.address)}" target="_blank" rel="noopener">${esc(u.directions)}</a></dd></div>
+            <div><dt>${icon('pin')}${esc(u.where)}</dt><dd><span dir="ltr" translate="no">${esc(x.address)}</span> <a class="dir-link" href="${mapLink(x.address)}" target="_blank" rel="noopener">${esc(u.directions)}</a></dd></div>
             <div><dt>${icon('child')}${esc(u.childcare)}</dt><dd>${txt(x.childcare)}</dd></div>
           </dl>
           <a class="btn btn-dark" href="#register" data-class="${k}">${esc(k === 'tuesday' ? u.register_tuesday : u.register_thursday)}</a>
@@ -183,8 +182,8 @@ ${field('c-message', u.f_message, '<textarea id="c-message" name="message" rows=
           ${icon('check')}<p>${txt(c.contact.success)}</p>
         </div>`;
 
-  const langLinks = (cls2 = '') => LANGS.map(l => `<a class="${cls2}" href="${l.path ? `/${l.path}/` : '/'}" hreflang="${l.code}" lang="${l.code}" dir="${l.dir || 'ltr'}" data-lang="${l.code}"${l.code === lang.code ? ' aria-current="true"' : ''}>${esc(l.native)}</a>`).join('');
-  const moreLinks = config.moreLanguages.map(m => `<button type="button" class="more-lang" data-gt="${m.code}" lang="${m.code}">${esc(m.native)}<small>${esc(m.english)}</small></button>`).join('');
+  const langLinks = (cls2 = '') => LANGS.map(l => `<a class="${cls2}" translate="no" href="${l.path ? `/${l.path}/` : '/'}" hreflang="${l.code}" lang="${l.code}" dir="${l.dir || 'ltr'}" data-lang="${l.code}"${l.code === lang.code ? ' aria-current="true"' : ''}>${esc(l.native)}</a>`).join('');
+  const moreLinks = config.moreLanguages.map(m => `<button type="button" class="more-lang" data-gt="${m.code}" lang="${m.code}"><span translate="no">${esc(m.native)}</span><small>${esc(m.english)}</small></button>`).join('');
 
   const content = `
 <div class="langbar" role="navigation" aria-label="${esc(u.lang_heading)}">
@@ -196,13 +195,13 @@ ${field('c-message', u.f_message, '<textarea id="c-message" name="message" rows=
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="${pre}" aria-label="ESL Omaha">${config.logoSvg}</a>
+    <a class="logo" translate="no" href="${pre}" aria-label="ESL Omaha">${config.logoSvg}</a>
     <nav aria-label="Main">
       <a href="#classes">${esc(u.nav_classes)}</a>
       <a href="#faq">${esc(u.nav_faq)}</a>
       <a href="#contact">${esc(u.nav_contact)}</a>
     </nav>
-    <button type="button" class="lang-btn" data-open-lang aria-haspopup="dialog">${icon('globe')}<span>${esc(lang.native)}</span></button>
+    <button type="button" class="lang-btn" data-open-lang aria-haspopup="dialog">${icon('globe')}<span translate="no">${esc(lang.native)}</span></button>
     <a class="btn btn-dark btn-sm" href="#register">${esc(u.nav_register)}</a>
   </div>
 </header>
@@ -224,7 +223,7 @@ ${field('c-message', u.f_message, '<textarea id="c-message" name="message" rows=
         </div>
       </div>
       <figure class="hero-photo">
-        <div class="bubble"><img src="${img(c.hero.photo)}" srcset="/images/esl-group-1200.webp 1200w, ${img(c.hero.photo)} 1800w" sizes="(max-width: 900px) 92vw, 50vw" alt="${esc(c.hero.photoAlt)}" width="1800" height="1200" fetchpriority="high"></div>
+        <div class="bubble"><img src="${img(c.hero.photo)}" alt="${esc(c.hero.photoAlt)}" width="1800" height="1200" fetchpriority="high"></div>
         <svg class="tail" viewBox="0 0 64 46" aria-hidden="true"><path d="M12 0 L0 44 L54 0 Z" fill="var(--paper)"/><path d="M12 1.5 L1.5 43 L54 1.5" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
       </figure>
     </div>
@@ -254,7 +253,7 @@ ${c.facts.items.map(f => `      <div class="fact"><p class="fact-title">${txt(f.
           <p>${fmt(b.text)}</p>
         </div>
         <dl>
-          <div><dt>${icon('calendar')}${esc(u.when)}</dt><dd>${esc(monthRange(loc, en.classes.bibleStudy.startDate, en.classes.bibleStudy.endMonth))}</dd></div>
+          <div><dt>${icon('calendar')}${esc(u.when)}</dt><dd>${esc(dateRange(loc, en.classes.bibleStudy.startDate, en.classes.bibleStudy.endDate))}</dd></div>
           <div><dt>${icon('pin')}${esc(u.where)}</dt><dd>${txt(b.where)} <a class="dir-link" href="${mapLink('Christ Community Church, 404 S 108th Ave, Omaha, NE')}" target="_blank" rel="noopener">${esc(u.directions)}</a></dd></div>
         </dl>
         <a class="btn btn-line" href="${esc(b.link)}" target="_blank" rel="noopener">${esc(u.learn_more)}</a>
@@ -309,7 +308,7 @@ ${c.faq.items.map(f => `        <details>
         <p>${fmt(c.contact.text)}</p>
         <div class="person">
           <img src="${img(c.contact.photo)}" alt="${esc(c.contact.name)}" width="120" height="120" loading="lazy">
-          <p><strong>${esc(c.contact.name)}</strong><span>${txt(c.contact.role)}</span></p>
+          <p><strong translate="no">${esc(c.contact.name)}</strong><span>${txt(c.contact.role)}</span></p>
         </div>
       </div>
       <div class="panel">${contactForm}
@@ -321,9 +320,9 @@ ${c.faq.items.map(f => `        <details>
 <footer>
   <div class="wrap">
     <div class="f-brand">
-      <a class="logo" href="${pre}" aria-label="ESL Omaha">${config.logoSvg}</a>
+      <a class="logo" translate="no" href="${pre}" aria-label="ESL Omaha">${config.logoSvg}</a>
       <p>${txt(c.footer.text)}</p>
-      <p dir="ltr">${esc(c.footer.address)}</p>
+      <p dir="ltr" translate="no">${esc(c.footer.address)}</p>
       <a class="fb" href="${esc(c.footer.facebook)}" target="_blank" rel="noopener">${icon('facebook')}${esc(u.facebook)}</a>
     </div>
     <nav class="f-langs" aria-label="${esc(u.lang_heading)}">

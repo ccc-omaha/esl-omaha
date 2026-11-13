@@ -29,7 +29,7 @@ var CONFIG = {
 };
 
 var LABELS = { tuesday: 'Tuesday registration', thursday: 'Thursday registration', contact: 'Contact form' };
-var LANG_NAMES = { en: 'English', es: 'Spanish', 'fa-AF': 'Dari', ps: 'Pashto', ar: 'Arabic', 'zh-Hans': 'Chinese', uk: 'Ukrainian', sw: 'Swahili', fr: 'French', vi: 'Vietnamese' };
+var LANG_NAMES = { en: 'English', es: 'Spanish', 'fa-AF': 'Dari', ps: 'Pashto', ar: 'Arabic', 'zh-Hans': 'Chinese', sw: 'Swahili', fr: 'French', vi: 'Vietnamese', ru: 'Russian', 'pt-BR': 'Portuguese', te: 'Telugu', ne: 'Nepali', ko: 'Korean' };
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
