@@ -146,16 +146,18 @@
         alt: { 'First Name': g('first'), 'Last Name': g('last') } };
     }
     var cls = g('class');
-    var addr = [g('line1'), g('line2'), g('city'), (g('state') + ' ' + g('zip')).trim()].filter(Boolean).join(', ');
+    var addr = [g('line1'), g('line2'), g('city'), (g('state') + ' ' + g('zip')).trim(), 'United States'].filter(Boolean).join(', ');
+    var digits = g('phone').replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
+    var phone = digits.length === 10 ? '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6) : g('phone');
     var f = {
       'Name': name,
       'Middle Name': g('middle'),
       'Date of Birth': g('dob_month') + '/' + ('0' + g('dob_day')).slice(-2) + '/' + g('dob_year'),
       'Gender': g('gender'),
-      'Phone': g('phone'),
+      'Phone': phone,
       'Email': g('email'),
       'Address': addr,
-      'Preferred Method(s) of Contact': g('contact_method'),
+      'Preferred Methods of Contact': g('contact_method').replace(/, /g, ','),
       'Country of Origin': g('country'),
       'First Language': g('first_language'),
       'Have you attended ESL classes at The Porch before?': g('before'),

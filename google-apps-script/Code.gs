@@ -12,17 +12,17 @@
  */
 var CONFIG = {
   sheets: {
-    tuesday:  'PASTE_TUESDAY_SHEET_ID',   // ESL Tuesday registration
-    thursday: 'PASTE_THURSDAY_SHEET_ID',  // ESL Thursday registration
-    contact:  'PASTE_CONTACT_SHEET_ID'    // ESL contact form
+    tuesday:  '1db1EsP8gCsKq2bHq84k0Z9o9uzMe2z6_vzc68pzNVbc', // ESL Omaha Tuesday Registration
+    thursday: '1QRefqjFL32MLoRaqcsOUOIaw4RjaQM1IJAaQdjNfxcE', // ESL Omaha Thursday Registration
+    contact:  '1rw_c5w5s_guqYBXrAsNf6grs5nV5xiLMHW-4upOUGGw'  // ESL Omaha Contact Form
   },
   // Who gets an email for each submission. Separate several with commas.
   notify: {
-    tuesday:  '',
-    thursday: '',
-    contact:  ''
+    tuesday:  'ESL.Omaha.NE@gmail.com',
+    thursday: 'ESL.Omaha.NE@gmail.com',
+    contact:  'ESL.Omaha.NE@gmail.com'
   },
-  timestampHeader: 'Submitted On',
+  timestampHeader: 'Date',
   timeZone: 'America/Chicago'
 };
 
@@ -51,7 +51,7 @@ function doPost(e) {
 function doGet() { return json({ ok: true, service: 'ESL Omaha forms' }); }
 
 function writeRow(sheet, data) {
-  var norm = function (s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); };
+  var norm = function (s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, ''); };
   var lastCol = Math.max(sheet.getLastColumn(), 1);
   var headers = sheet.getRange(1, 1, 1, lastCol).getValues()[0].map(String);
   if (headers.every(function (h) { return !h; })) headers = [];
@@ -59,7 +59,7 @@ function writeRow(sheet, data) {
   headers.forEach(function (h, i) { if (h) index[norm(h)] = i; });
 
   var values = {};
-  var stamp = Utilities.formatDate(new Date(), CONFIG.timeZone, 'yyyy-MM-dd HH:mm:ss');
+  var stamp = Utilities.formatDate(new Date(), CONFIG.timeZone, 'MM/dd/yyyy HH:mm:ss');
   values[CONFIG.timestampHeader] = stamp;
   Object.keys(data.fields || {}).forEach(function (k) { values[k] = data.fields[k]; });
 
@@ -67,8 +67,8 @@ function writeRow(sheet, data) {
   var alt = data.alt || {};
   Object.keys(alt).forEach(function (k) { if (norm(k) in index) values[k] = alt[k]; });
   // If the sheet splits the name or address, skip the combined columns it does not have.
-  if (!('name' in index) && ('first name' in index)) delete values['Name'];
-  if (!('address' in index) && ('address line 1' in index)) delete values['Address'];
+  if (!('name' in index) && ('firstname' in index)) delete values['Name'];
+  if (!('address' in index) && ('addressline1' in index)) delete values['Address'];
 
   Object.keys(values).forEach(function (k) {
     if (!(norm(k) in index)) {
@@ -78,11 +78,12 @@ function writeRow(sheet, data) {
     }
   });
 
-  var row = new Array(headers.length).fill('');
+  var row = [];
+  for (var c = 0; c < headers.length; c++) row.push('');
   Object.keys(values).forEach(function (k) {
     var v = values[k] == null ? '' : String(values[k]);
-    // keep phone numbers, ZIPs and dates as typed instead of letting Sheets convert them
-    if (/^[=+\-@]/.test(v) || /^[\d\s()\/.\-]+$/.test(v)) v = "'" + v;
+    // never let an answer run as a spreadsheet formula
+    if (/^[=+\-@]/.test(v)) v = "'" + v;
     row[index[norm(k)]] = v;
   });
   sheet.appendRow(row);
