@@ -30,3 +30,4 @@ Machine-assisted. Have native speakers review before relying on them, especially
 2. In Squarespace, turn off the old forms' Google Drive storage so nothing double-posts during the switch.
 3. Point eslomaha.com DNS at Netlify and add the domain in Netlify.
 4. Submit one real-looking test, confirm the row and Tera's email, delete the row.
+- Notification emails are styled HTML (`buildEmail` in the script), live as script version 7 (Nov 16, 2026). `sendSamples` sends two sample emails to Eric; running it from the editor needs a one-time authorization.
