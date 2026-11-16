@@ -95,17 +95,85 @@ function writeRow(sheet, data) {
   return values;
 }
 
-function notify(data, values) {
-  var to = CONFIG.notify[data.form];
+function notify(data, values, toOverride) {
+  var to = toOverride || CONFIG.notify[data.form];
   if (!to) return;
   var lines = Object.keys(values).filter(function (k) { return values[k] !== '' && values[k] != null; })
     .map(function (k) { return k + ': ' + values[k]; });
   var lang = LANG_NAMES[data.lang] || data.lang || 'English';
   if (lang !== 'English') lines.push('', 'Website language used: ' + lang);
   var who = (data.fields && data.fields['Name']) || 'Someone';
-  var opts = { name: 'ESL Omaha Website' };
+  var opts = { name: 'ESL Omaha Website', htmlBody: buildEmail(data, values, lang) };
   if (data.fields && /@/.test(data.fields['Email'] || '')) opts.replyTo = data.fields['Email'];
+  // The plain-text lines are the fallback for mail apps that do not show HTML.
   MailApp.sendEmail(to, 'ESL Omaha: new ' + LABELS[data.form] + ' from ' + who, lines.join('\n'), opts);
+}
+
+// The styled email, matching eslomaha.com (logo, aqua bar, navy buttons).
+function buildEmail(data, values, lang) {
+  var esc = function (v) {
+    return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  };
+  var INK = '#101935', INK2 = '#3b4462', LINE = '#e6dfd3', PAPER = '#FFFBF4', AQUA = '#8DE2E0';
+  var FONT = "font-family:'Proxima Nova',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;";
+  var f = data.fields || {};
+  var who = f['Name'] || 'Someone';
+  var isContact = data.form === 'contact';
+  var email = /@/.test(f['Email'] || '') ? f['Email'] : '';
+  var phone = f['Phone'] || '';
+  var sheetUrl = 'https://docs.google.com/spreadsheets/d/' + CONFIG.sheets[data.form];
+  var first = String(who).split(' ')[0];
+
+  var btn = function (href, label, dark) {
+    return '<a href="' + esc(href) + '" style="display:inline-block;margin:0 8px 8px 0;padding:11px 20px;border-radius:999px;border:2px solid ' + INK + ';' +
+      'background:' + (dark ? INK : '#ffffff') + ';color:' + (dark ? '#ffffff' : INK) + ';' + FONT + 'font-size:15px;font-weight:bold;text-decoration:none;">' + esc(label) + '</a>';
+  };
+  var buttons = '';
+  if (email) buttons += btn('mailto:' + email, 'Email ' + first, true);
+  if (phone) buttons += btn('tel:' + String(phone).replace(/[^\d+]/g, ''), 'Call ' + phone, false);
+  buttons += btn(sheetUrl, 'Open the spreadsheet', false);
+
+  var skip = { 'Name': 1, 'Message': 1 };
+  var rows = Object.keys(values).filter(function (k) { return !skip[k] && values[k] !== '' && values[k] != null; }).map(function (k) {
+    return '<tr><td style="padding:11px 0;border-top:1px solid ' + LINE + ';vertical-align:top;width:42%;' + FONT + 'font-size:13px;font-weight:bold;color:' + INK2 + ';">' + esc(k) + '</td>' +
+      '<td style="padding:11px 0 11px 14px;border-top:1px solid ' + LINE + ';vertical-align:top;' + FONT + 'font-size:15px;color:' + INK + ';">' + esc(values[k]).replace(/\n/g, '<br>') + '</td></tr>';
+  }).join('');
+
+  var message = isContact && f['Message']
+    ? '<div style="margin:0 0 22px;padding:16px 18px;background:#E3F7F6;border-radius:14px;' + FONT + 'font-size:16px;line-height:1.55;color:' + INK + ';">' + esc(f['Message']).replace(/\n/g, '<br>') + '</div>'
+    : '';
+  var langNote = lang !== 'English'
+    ? '<p style="margin:0 0 20px;padding:10px 14px;background:#ECFBF2;border-radius:10px;' + FONT + 'font-size:14px;color:' + INK + ';">Filled out on the <strong>' + esc(lang) + '</strong> page. Answers are saved in English where there were choices.</p>'
+    : '';
+
+  return '<div style="margin:0;padding:24px 12px;background:' + PAPER + ';">' +
+    '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;margin:0 auto;background:#ffffff;border:1px solid ' + LINE + ';border-radius:18px;overflow:hidden;">' +
+    '<tr><td style="background:' + AQUA + ';padding:18px 28px;"><img src="https://eslomaha.com/images/esl-omaha-logo-black.png" alt="ESL Omaha" height="34" style="display:block;height:34px;width:auto;border:0;"></td></tr>' +
+    '<tr><td style="padding:28px 28px 8px;">' +
+    '<span style="display:inline-block;padding:5px 14px;border-radius:999px;background:#FFE3CC;color:#9A4300;' + FONT + 'font-size:13px;font-weight:bold;">' + (isContact ? 'New message' : 'New ' + esc(LABELS[data.form])) + '</span>' +
+    '<h1 style="margin:14px 0 18px;' + FONT + 'font-size:28px;line-height:1.15;font-weight:800;color:' + INK + ';">' + esc(who) + '</h1>' +
+    message + langNote +
+    '<div style="margin:0 0 14px;">' + buttons + '</div>' +
+    '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-bottom:1px solid ' + LINE + ';">' + rows + '</table>' +
+    '</td></tr>' +
+    '<tr><td style="padding:18px 28px 26px;' + FONT + 'font-size:13px;line-height:1.5;color:' + INK2 + ';">This was also added to the ' + esc(LABELS[data.form]) + ' spreadsheet. Reply to this email to write back to ' + esc(first) + '.<br>Sent from <a href="https://eslomaha.com" style="color:' + INK2 + ';">eslomaha.com</a></td></tr>' +
+    '</table></div>';
+}
+
+// Run this from the editor to see the styled emails without touching the sheets.
+// Sends one sample registration and one sample contact email to the address below.
+function sendSamples() {
+  var to = 'etwendt@gmail.com';
+  var reg = { 'Name': 'Sample Student', 'Middle Name': '', 'Date of Birth': '07/04/1990', 'Gender': 'Female', 'Phone': '(402) 555-0102',
+    'Email': 'sample@example.com', 'Address': '404 S 108th Ave, Apt 1, Omaha, NE 68154, United States', 'Preferred Methods of Contact': 'Text,WhatsApp',
+    'Country of Origin': 'Afghanistan', 'First Language': 'Dari', 'Have you attended ESL classes at The Porch before?': 'No',
+    'How did you hear about us?': 'Friend', 'Do you need childcare?': 'Yes', 'If yes, please list each child:': 'Child 1: Sample, 3, girl',
+    'Are you interested in transportation?': 'No' };
+  var stamp = { 'Submitted On': Utilities.formatDate(new Date(), CONFIG.timeZone, 'MM/dd/yyyy HH:mm:ss') };
+  var merge = function (a, b) { var o = {}; Object.keys(a).forEach(function (k) { o[k] = a[k]; }); Object.keys(b).forEach(function (k) { o[k] = b[k]; }); return o; };
+  notify({ form: 'thursday', lang: 'fa-AF', fields: reg }, merge(stamp, reg), to);
+  var msg = { 'Name': 'Sample Person', 'Email': 'sample@example.com', 'Message': 'Hello, I would like to learn English.\nDo you have evening classes for beginners?' };
+  notify({ form: 'contact', lang: 'en', fields: msg }, merge(stamp, msg), to);
 }
 
 function json(obj) {
