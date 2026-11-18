@@ -27,7 +27,7 @@ content:
     fields:
       - { name: eyebrow, label: Small label, type: string, description: "The orange pill above the big headline (No cost. No barriers.)." }
       - { name: heading, label: Headline, type: string, description: "The big headline at the top of the page." }
-      - { name: text, label: Intro paragraph, type: text, description: "The paragraph under the big headline." }
+      - { name: text, label: Intro paragraph, type: text, description: "The paragraph under the big headline. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
       - { name: primaryButton, label: Dark button text, type: string, description: "The dark button under the intro. It jumps to the registration form." }
       - { name: secondaryButton, label: Outline button text, type: string, description: "The outlined button next to it. It jumps to the class times." }
       - { name: photo, label: Photo, type: image, description: "The photo in the speech bubble at the top. Keep it under 500 KB and landscape." }
@@ -58,7 +58,7 @@ content:
     fields:
       - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the Classes heading." }
       - { name: heading, label: Heading, type: string, description: "The heading above the two class cards." }
-      - { name: intro, label: Intro, type: text, description: "The paragraph under the Classes heading." }
+      - { name: intro, label: Intro, type: text, description: "The paragraph under the Classes heading. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
       - name: tuesday
         label: Tuesday card (blue)
         type: object
@@ -90,7 +90,7 @@ content:
           - { name: startTime, label: Start time, type: string, description: "24-hour time, like 10:45." }
           - { name: endTime, label: End time, type: string, description: "24-hour time, like 12:00." }
           - { name: where, label: Where, type: string, description: "The Where row in the box." }
-          - { name: text, label: Short note, type: text, description: "The line under the title." }
+          - { name: text, label: Short note, type: text, description: "The line under the title. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
           - { name: link, label: Learn more link, type: string, description: "Where the Learn more button goes (Church Center page)." }
 
   # ---------------------------------------------------------------
@@ -109,7 +109,7 @@ content:
         description: "The numbered steps, left to right."
         fields:
           - { name: title, label: Step title, type: string, description: "The bold title next to the number." }
-          - { name: text, label: Step text, type: text, description: "The text under the step title." }
+          - { name: text, label: Step text, type: text, description: "The text under the step title. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
 
   # ---------------------------------------------------------------
   - name: faq
@@ -127,7 +127,7 @@ content:
         description: "Each question opens to show its answer."
         fields:
           - { name: question, label: Question, type: string, description: "The bold line people click." }
-          - { name: answer, label: Answer, type: text, description: "Shown when the question is opened." }
+          - { name: answer, label: Answer, type: text, description: "Shown when the question is opened. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
 
   # ---------------------------------------------------------------
   - name: register
@@ -138,7 +138,7 @@ content:
     fields:
       - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above the form heading." }
       - { name: heading, label: Heading, type: string, description: "The heading above the registration form." }
-      - { name: text, label: Intro, type: text, description: "The line under the heading." }
+      - { name: text, label: Intro, type: text, description: "The line under the heading. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
       - { name: success, label: Thank you message, type: text, description: "Shown in place of the form after someone registers." }
 
   # ---------------------------------------------------------------
@@ -150,7 +150,7 @@ content:
     fields:
       - { name: eyebrow, label: Small label, type: string, description: "The small orange all-caps line above Have a question?" }
       - { name: heading, label: Heading, type: string, description: "The heading next to the contact form." }
-      - { name: text, label: Intro, type: text, description: "The paragraph under the heading." }
+      - { name: text, label: Intro, type: text, description: "The paragraph under the heading. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side." }
       - { name: name, label: Leader name, type: string, description: "The name under the photo." }
       - { name: role, label: Leader title, type: string, description: "The line under the name." }
       - { name: photo, label: Leader photo, type: image, description: "The round photo. Square, under 200 KB." }
